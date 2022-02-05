@@ -1,4 +1,8 @@
-body{
-    background-image: url("Images/Hill Top-Navi.jpg");
+body {
+    /*The image is now uploaded to imgtu*/
+    background-image: url("https://s4.ax1x.com/2022/02/05/HniRun.jpg");
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
 }
 
