@@ -6,3 +6,13 @@ body {
     background-repeat: no-repeat;
 }
 
+.Header{
+    background-color: hsla(41, 100%, 95%, 0.8);
+
+    border-style: solid;
+    border-width: thin;
+    border-radius: 25px;
+
+    margin: 100px 200px 30px;
+    padding: 15px;
+}
