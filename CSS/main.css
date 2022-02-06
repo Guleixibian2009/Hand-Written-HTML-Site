@@ -1,5 +1,5 @@
 body {
-    /*The image is now uploaded to imgtu*/
+    /*The image(Hill Top-Isaac Wendlanda.jpg) is now uploaded to imgtu*/
     background-image: url("https://s4.ax1x.com/2022/02/05/HniRun.jpg");
     background-size: cover;
     background-attachment: scroll;
@@ -11,9 +11,20 @@ body {
 
     margin: 100px 200px 30px;
     
-    border-style: solid;
-    border-width: thin;
+    border-style: dashed;
+    border-width: medium;
     border-radius: 25px;
 
-    padding: 15px;
+    padding: 0px 15px 15px 15px;
+}
+
+.Header h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.Header p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
 }
