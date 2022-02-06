@@ -24,7 +24,29 @@ body {
     font-weight: bold;
 }
 
-.Header p{
+.Header p, a{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
+    text-decoration: none;
+}
+
+.Header strong{
+    font-family: Times, serif;
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.Header code{
+    background-color: peachpuff;
+
+    border-style: none;
+    border-radius: 5px;
+
+    padding: 2px;
+
+    font-family: 'Fira Code', 'Courier New', sans-serif;
+    font-size: 18px;
+    color: indianred;
 }
