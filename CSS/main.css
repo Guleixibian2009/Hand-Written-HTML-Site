@@ -31,10 +31,9 @@ body {
 }
 
 .Header strong{
-    font-family: Times, serif;
+    font-family: 'Comic San MS', serif;
     font-size: 20px;
-    font-weight: 800;
-    text-transform: uppercase;
+    font-weight: 900;
     text-decoration: underline;
 }
 
