@@ -1,3 +1,4 @@
+/*The background img*/
 body {
     /*The image(Hill Top-Isaac Wendlanda.jpg) is now uploaded to imgtu*/
     background-image: url("https://s4.ax1x.com/2022/02/05/HniRun.jpg");
@@ -6,6 +7,7 @@ body {
     background-repeat: no-repeat;
 }
 
+/*The Header part*/
 .Header{
     background-color: hsla(41, 100%, 95%, 0.8);
 
@@ -15,10 +17,12 @@ body {
     border-width: medium;
     border-radius: 25px;
 
-    padding: 0px 15px 15px 15px;
+    padding: 0px 15px 15px;
 }
 
 .Header h1{
+    margin: 5px 0px 5px;
+
     font-family: 'Times New Roman', Times, serif;
     font-size: 48px;
     font-weight: bold;
@@ -48,4 +52,56 @@ body {
     font-family: 'Fira Code', 'Courier New', sans-serif;
     font-size: 18px;
     color: indianred;
+}
+
+/*The Main_Body*/
+.Main_Body{
+    background-color: hsla(41, 100%, 95%, 0.9);
+    margin: 10px 500px 30px 200px;
+    
+    border-style: double;
+    border-width: medium;
+    border-radius: 25px;
+
+    padding: 8px;
+}
+
+/*The Main_Body Header*/
+.Main_Body_Title{
+    margin: 0px;
+
+    border-style: none;
+    border-radius: 0px;
+
+    padding: 5px
+}
+
+.Main_Body_Title h2{
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+
+    margin: 5px;
+}
+
+.Main_Body_Title p, a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+
+    margin: 5px;
+}
+
+.Main_Body_Title code{
+    background-color: peachpuff;
+
+    border-style: none;
+    border-radius: 5px;
+
+    padding: 2px;
+
+    font-family: 'Fira Code', 'Courier New', sans-serif;
+    font-size: 20px;
+    color: indianred;
+    vertical-align: middle;
 }
