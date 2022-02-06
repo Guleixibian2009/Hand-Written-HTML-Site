@@ -1,0 +1,51 @@
+/*The Main_Body*/
+.Main_Body{
+    background-color: hsla(41, 100%, 95%, 0.9);
+    margin: 10px 500px 30px 200px;
+    
+    border-style: double;
+    border-width: medium;
+    border-radius: 25px;
+
+    padding: 8px;
+}
+
+/*The Main_Body Title*/
+.Main_Body_Title{
+    margin: 0px;
+
+    border-style: none;
+    border-radius: 0px;
+
+    padding: 5px
+}
+
+.Main_Body_Title h2{
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+
+    margin: 5px;
+}
+
+.Main_Body_Title p, a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+
+    margin: 5px;
+}
+
+.Main_Body_Title code{
+    background-color: peachpuff;
+
+    border-style: none;
+    border-radius: 5px;
+
+    padding: 2px;
+
+    font-family: 'Fira Code', 'Courier New', sans-serif;
+    font-size: 20px;
+    color: indianred;
+    vertical-align: middle;
+}
