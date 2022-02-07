@@ -3,14 +3,14 @@
     background-color: hsla(41, 100%, 95%, 0.9);
     margin: 10px 500px 30px 200px;
     
-    border-style: double;
-    border-width: medium;
+    border-style: dashed;
+    border-width: bold;
     border-radius: 25px;
 
-    padding: 8px;
+    padding: 10px;
 }
 
-/*The Main_Body Title*/
+/*The Main_Body_Title*/
 .Main_Body_Title{
     margin: 0px;
 
@@ -22,8 +22,8 @@
 
 .Main_Body_Title h2{
     text-align: left;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 40px;
+    font-family: 'Comic Sans MS', serif;
+    font-size: 36px;
 
     margin: 5px;
 }
@@ -45,7 +45,42 @@
     padding: 2px;
 
     font-family: 'Fira Code', 'Courier New', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     color: indianred;
     vertical-align: middle;
+}
+
+/*The Main_Body_Article*/
+.Main_Body_Article{
+    margin: 0px;
+
+    border-style: none;
+    border-radius: 0px;
+
+    padding: 5px
+}
+
+.Main_Body_Article p, .Main_Body_Article a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+
+    margin: 0px 5px 15px 5px;
+}
+
+.Main_Body_Article a{
+    text-decoration: underline;
+}
+
+.Main_Body_Article code{
+    background-color: peachpuff;
+
+    border-style: none;
+    border-radius: 5px;
+
+    padding: 2px;
+
+    font-family: 'Fira Code', 'Courier New', sans-serif;
+    font-size: 15px;
+    color: indianred;
 }

@@ -4,7 +4,7 @@
 
     margin: 100px 200px 30px;
     
-    border-style: dashed;
+    border-style: solid;
     border-width: medium;
     border-radius: 25px;
 
@@ -14,7 +14,7 @@
 .Header h1{
     margin: 5px 0px 5px;
 
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Comic Sans MS', serif;
     font-size: 48px;
     font-weight: bold;
 }
@@ -23,6 +23,9 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     text-decoration: none;
+    line-height: 30px;
+
+    margin: 3px;
 }
 
 .Header strong{
@@ -34,11 +37,12 @@
 
 .Header code{
     background-color: peachpuff;
+    margin: 0px 2px 0px;
 
     border-style: none;
     border-radius: 5px;
 
-    padding: 2px;
+    padding: 3px;
 
     font-family: 'Fira Code', 'Courier New', sans-serif;
     font-size: 18px;
