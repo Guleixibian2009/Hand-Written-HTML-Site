@@ -1,0 +1,12 @@
+/*The wrapper*/
+.Wrapper {
+    float: left;
+}
+
+
+/*From W3School ---- Let the Wrapper <div> be able to adjust*/
+@media screen and (max-width: 600px) {
+  .Wrapper.Author, .Wrapper.Main_Body {
+    width: 100%;
+  }
+}

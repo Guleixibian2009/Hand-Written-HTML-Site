@@ -5,4 +5,6 @@ body {
     background-size: cover;
     background-attachment: scroll;
     background-repeat: no-repeat;
+
+    padding: 100px 200px 100px;
 }

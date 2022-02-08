@@ -1,7 +1,7 @@
 /*The Main_Body*/
-.Main_Body{
+.Wrapper.Main_Body{
+    width: 80%;
     background-color: hsla(41, 100%, 95%, 0.9);
-    margin: 10px 200px 30px 500px;
     
     border-style: dashed;
     border-width: bold;
