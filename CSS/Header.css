@@ -17,7 +17,7 @@
     font-weight: bold;
 }
 
-.Header p, a{
+.Header p, .Header a{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     text-decoration: none;
