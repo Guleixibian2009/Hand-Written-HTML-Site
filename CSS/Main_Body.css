@@ -1,11 +1,11 @@
 /*The Main_Body*/
-.Wrapper.Main_Body{
-    width: 80%;
+.Main_Body{
     background-color: hsla(41, 100%, 95%, 0.9);
     
     border-style: dashed;
     border-width: bold;
     border-radius: 25px;
+    border-color: indianred;
 
     padding: 10px;
 }

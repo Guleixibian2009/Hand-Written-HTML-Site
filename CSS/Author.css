@@ -1,11 +1,6 @@
-/*The Author <aside>*/
-.Wrapper.Author{
-    width: 20%;
+/*The Author*/
+.Author{
+    background-color: white;
 
     padding: 10px;
-}
-
-/*The Author_Box <div>*/
-.Author_Box {
-    
 }

@@ -1,12 +1,10 @@
 /*The Header part*/
 .Header{
     background-color: hsla(41, 100%, 95%, 0.8);
-
-    margin: 100px 200px 30px;
     
     border-style: solid;
     border-width: medium;
-    border-radius: 25px;
+    border-color: indianred;
 
     padding: 0px 15px 15px;
 }

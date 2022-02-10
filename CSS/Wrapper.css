@@ -1,12 +1,24 @@
-/*The wrapper*/
+/*The Grid-Container wrapper*/
 .Wrapper {
-    float: left;
+    display: grid;
+    gap: 20px;
+
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 25% 25% 25% 25%;
+    
 }
 
+.Header{
+    grid-column: 1 / 6;
+    grid-row: 1 / 2;
+}
 
-/*From W3School ---- Let the Wrapper <div> be able to adjust*/
-@media screen and (max-width: 600px) {
-  .Wrapper.Author, .Wrapper.Main_Body {
-    width: 100%;
-  }
+.Author{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.Main_Body{
+    grid-column: 2 / 6;
+    grid-row: 2 / 5;
 }
