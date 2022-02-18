@@ -8,3 +8,14 @@ body {
 
     padding: 100px 200px 100px;
 }
+
+/*Define some fonts using @font-face*/
+@font-face {
+    font-family: "Microsoft Yahei UI Bold";
+    src: url("../Fonts/MicrosoftYaHeiUI-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Fira Code";
+    src: url("../Fonts/FiraCode-Regular.woff");
+}
