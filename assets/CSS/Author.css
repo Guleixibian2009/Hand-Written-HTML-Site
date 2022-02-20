@@ -36,5 +36,15 @@ div.Author div.Author_Data p#Author_Name{
 
     font-family: "Fabfelt Script Bold";
     font-size: 20px;
-    font-weight: 1000;
+    font-weight: 800;
+}
+
+div.Author div.Author_Data p#Author_Sentence{
+    margin-top: 10px;
+
+    border-style: none;
+
+    font-family: "Fabfelt Script Bold";
+    font-size: 16px;
+    font-weight: 500;
 }
