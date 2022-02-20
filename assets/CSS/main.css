@@ -11,11 +11,16 @@ body {
 
 /*Define some fonts using @font-face*/
 @font-face {
-    font-family: "Microsoft Yahei UI Bold";
-    src: url("../Fonts/MicrosoftYaHeiUI-Bold.woff");
+    font-family: "Fira Code";
+    src: url("../Fonts/FiraCode-Regular.woff");
 }
 
 @font-face {
-    font-family: "Fira Code";
-    src: url("../Fonts/FiraCode-Regular.woff");
+    font-family: "Fabfelt Script Bold";
+    src: url("../Fonts/FabfeltScript-Bold-2.woff");
+}
+
+@font-face {
+    font-family: "Aquatico Regular";
+    src: url("../Fonts/Aquatico-Regular-2.woff");
 }

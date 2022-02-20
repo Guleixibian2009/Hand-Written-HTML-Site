@@ -12,7 +12,7 @@
 .Header h1{
     margin: 5px 0px 5px;
 
-    font-family: 'Comic Sans MS', serif;
+    font-family: "Aquatico Regular";
     font-size: 48px;
     font-weight: bold;
 }
@@ -27,7 +27,7 @@
 }
 
 .Header strong{
-    font-family: 'Comic Sans MS', serif;
+    font-family: "Aquatico Regular";
     font-size: 20px;
     font-weight: 900;
     text-decoration: underline;
