@@ -37,7 +37,7 @@ div.Author div.Author_Data p#Author_Name{
 
     border-style: none;
 
-    font-family: "Fabfelt Script Bold";
+    font-family: "Fabfelt Script Bold", Arial, Helvetica;
     font-size: 20px;
     font-weight: 800;
 }
@@ -47,7 +47,7 @@ div.Author div.Author_Data p#Author_Sentence{
 
     border-style: none;
 
-    font-family: "Fabfelt Script Bold";
+    font-family: "Fabfelt Script Bold", Arial, Helvetica;
     font-size: 16px;
     font-weight: 500;
 }

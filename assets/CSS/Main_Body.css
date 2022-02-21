@@ -22,7 +22,7 @@
 
 .Main_Body_Title h2{
     text-align: left;
-    font-family: "Gagalin Regular";
+    font-family: "Gagalin Regular", "Comic Sans MS"; /*There must me an alternate font otherwise the page will be ugly*/
     font-size: 46px;
 
     margin: 5px;
