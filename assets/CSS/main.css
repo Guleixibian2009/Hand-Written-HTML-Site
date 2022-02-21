@@ -24,3 +24,8 @@ body {
     font-family: "Aquatico Regular";
     src: url("../Fonts/Aquatico-Regular-2.woff");
 }
+
+@font-face {
+    font-family: "Gagalin Regular";
+    src: url("../Fonts/Gagalin-Regular.woff");
+}
