@@ -1,8 +1,5 @@
 /*The Survey Banner*/
 .Survey_Banner{
-    display: block;
-    visibility: visible;
-
     position: absolute;
     top: 0px;
     left: 0px;
