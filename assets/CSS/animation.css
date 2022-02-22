@@ -1,0 +1,25 @@
+/*All the animations in page*/
+
+/*Some vars*/
+:root{
+    --link-blue: rgb(0, 0, 255);
+    --link-red: rgb(220, 0, 84);
+    --link-hover-sky-blue: rgb(14, 218, 233);
+    --link-visited-red-purple: rgb();
+}
+
+/*My photo --- rotate*/
+div.Author div.Author_Photo img#Author{
+    transform: rotateZ(0deg); 
+    /*Code from my generated site*/
+    transition: transform 2s ease-in-out;
+}
+
+div.Author div.Author_Photo:hover img#Author{
+    transform: rotateZ(360deg);
+}
+
+/*Links --- color*/
+a:link{
+
+}

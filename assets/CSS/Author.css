@@ -23,8 +23,6 @@ div.Author div.Author_Photo img#Author{
     margin-left: auto;
     margin-right: auto;
     width: 70%;
-
-    border-radius: 50%;
 }
 
 div.Author div.Author_Data p#Author_Name,
