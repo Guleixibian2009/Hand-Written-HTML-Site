@@ -4,8 +4,8 @@
 :root{
     --link-blue: rgb(0, 0, 255);
     --link-red: rgb(220, 0, 84);
-    --link-hover-sky-blue: rgb(14, 218, 233);
-    --link-visited-red-purple: rgb();
+    --link-hover-sky-blue: rgb(49,94,251);
+    --link-visited-red-purple: rgb(152, 91, 158);
 }
 
 /*My photo --- rotate*/
@@ -21,5 +21,62 @@ div.Author div.Author_Photo:hover img#Author{
 
 /*Links --- color*/
 a:link{
+    color: var(--link-blue);
+}
 
+a:hover{
+    color: var(--link-hover-sky-blue);
+}
+
+a:active{
+    color: var(--link-red);
+}
+
+a:visited{
+    color: var(--link-visited-red-purple)
+}
+
+/*Website Link --- Tooltip*/
+/*Code from W3School*/
+div.Main_Body div.Main_Body_Article a.Link_With_Tooltip{
+    position: relative;
+}
+
+div.Main_Body div.Main_Body_Article a.Link_With_Tooltip span.Tooltip_Word{
+    visibility: hidden;
+
+    background-color: rgba(0, 0, 0, 0.8);
+    color: hsla(41, 100%, 95%, 0.9);
+
+    text-align: center;
+
+    border-radius: 6px;
+    padding: 5px 0;
+
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+    
+    /*To show it in 1s*/
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+div.Main_Body div.Main_Body_Article a.Link_With_Tooltip span.Tooltip_Word::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+    
+
+div.Main_Body div.Main_Body_Article a.Link_With_Tooltip:hover span.Tooltip_Word{
+    visibility: visible;
+    opacity: 1;
 }
