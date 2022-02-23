@@ -29,3 +29,8 @@ body {
     font-family: "Gagalin Regular";
     src: url("../Fonts/Gagalin-Regular.woff");
 }
+
+@font-face {
+    font-family: "Bigmouth Regular";
+    src: url("../Fonts/Bigmouth-Regular.woff");
+}

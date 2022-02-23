@@ -6,6 +6,8 @@
     --link-red: rgb(220, 0, 84);
     --link-hover-sky-blue: rgb(49,94,251);
     --link-visited-red-purple: rgb(152, 91, 158);
+    --social-link-hover-grey: rgb(10, 10, 10);
+    --social-link-active-grey: var(--social-link-hover-grey);
 }
 
 /*My photo --- rotate*/
@@ -96,5 +98,42 @@ div.Main_Body div.Main_Body_Article a.Link_With_Tooltip:hover span.Tooltip_Word{
     display: block;
     visibility: visible;
     animation: Survey_Banner 1s both;
-    animation-delay: 3s;
+    animation-delay: 5s;
+}
+
+/*Social Links --- BgColor*/
+
+div.Social_Link > div {
+    background-color: white;
+
+    border-style: hidden;
+    border-radius: 5px;
+    padding: 3px;
+
+    text-align: center;
+}
+
+div.Social_Link > div span{
+    font-family: "Bigmouth Regular", Arial, Helvetica, sans-serif;
+}
+
+div.Social_Link > div a{
+    text-decoration: none;
+}
+
+div.Social_Link > div a:link{
+    color: black;
+}
+
+div.Social_Link > div a:hover{
+    color: var(--social-link-hover-grey);
+}
+
+div.Social_Link > div a:active{
+    color: var(--social-link-active-grey);
+}
+
+div.Social_Link > div:hover{
+    background-color: rgb(238,238,238);
+    transition: background-color 0.2s linear;
 }

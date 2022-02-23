@@ -1,15 +1,14 @@
 /*The Survey Banner*/
 .Survey_Banner{
-    position: absolute;
+    position: fixed;
     top: 0px;
-    left: 0px;
+    left: 208px;
 
     background-color: rgb(221, 255, 255);
     margin: 0px;
     padding: 8px;
 
     height: 39px;
-    width: 100%;
 }
 
 .Survey_Banner p, .Survey_Banner a{
