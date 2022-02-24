@@ -46,3 +46,19 @@
     font-size: 18px;
     color: indianred;
 }
+
+/*The Survey Banner*/
+.Survey_Banner{
+    background-color: rgb(221, 255, 255);
+    margin: 10px 10px 10px 30px;
+    border-style: none none none solid;
+    border-left-color: cornflowerblue;
+    border-left-width: 3px;
+    padding: 8px;
+}
+
+.Survey_Banner p, .Survey_Banner a{
+    font-family: "Bigmouth Regular", Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin: 10px;
+}

@@ -7,24 +7,6 @@
     padding: 3px 2px 3px 3px;
 }
 
-/*The Survey Banner*/
-.Survey_Banner{
-    position: fixed;
-    top: 0px;
-    left: 208px;
-
-    background-color: rgb(221, 255, 255);
-    margin: 0px;
-    padding: 8px;
-
-    height: 39px;
-}
-
-.Survey_Banner p, .Survey_Banner a{
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 10px;
-}
-
 /*The Grid-Container wrapper*/
 .Wrapper {
     display: grid;

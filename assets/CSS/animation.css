@@ -83,26 +83,7 @@ div.Main_Body div.Main_Body_Article a.Link_With_Tooltip:hover span.Tooltip_Word{
     opacity: 1;
 }
 
-/*Survey banner --- disappear*/
-@keyframes Survey_Banner{
-    from {
-        visibility: visible;
-    }
-
-    to {
-        visibility: hidden;
-    }
-}
-
-.Survey_Banner{
-    display: block;
-    visibility: visible;
-    animation: Survey_Banner 1s both;
-    animation-delay: 5s;
-}
-
 /*Social Links --- BgColor*/
-
 div.Social_Link > div {
     background-color: white;
 
