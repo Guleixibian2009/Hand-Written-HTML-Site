@@ -77,6 +77,46 @@
     color: indianred;
 }
 
+.Main_Body_Article kbd{
+    background-color: rgb(244, 247, 250);
+    
+    border-style: solid;
+    border-radius: 5px;
+    border-color: black;
+    border-width: 1px;
+
+    padding: 2px;
+
+    font-family: 'Fira Code', 'Courier New', sans-serif;
+    font-size: 15px;
+}
+
+.Main_Body_Article img{
+    margin: 3px;
+
+    vertical-align: middle;
+}
+
+.Main_Body_Article .Code_Block{
+    background-color: rgb(244, 247, 250);
+
+    margin: 10px;
+
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(220, 230, 240);
+    border-radius: 10px;
+
+    padding: 1em;
+}
+
+.Main_Body_Article .Code_Block pre{
+    margin: 3px;
+
+    font-family: "Fira Code";
+    font-size: 14px;
+}
+
 /*The Main_Body_Update_Date*/
 .Main_Body_Update_Date{
     margin: 0px;
