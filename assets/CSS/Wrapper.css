@@ -11,9 +11,6 @@
 .Wrapper {
     display: grid;
     gap: 20px;
-
-    grid-template-columns: 260px auto auto auto auto;
-    grid-template-rows: 20% 20% 20% 20% 20%;
 }
 
 .Header{

@@ -1,6 +1,7 @@
 /*The Author*/
 div.Author{
     background-color: white;
+    width: 230px !important; /*Then the total width will be 260px*/
 
     padding: 15px;
 
@@ -22,7 +23,7 @@ div.Author div.Author_Photo img#Author{
 
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    width: 167px;
 }
 
 div.Author div.Author_Data p#Author_Name,
