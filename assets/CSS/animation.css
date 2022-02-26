@@ -8,6 +8,9 @@
     --link-visited-red-purple: rgb(152, 91, 158);
     --social-link-hover-grey: rgb(10, 10, 10);
     --social-link-active-grey: var(--social-link-hover-grey);
+    --button-bgimage: linear-gradient(rgb(252, 252, 252), rgb(245, 245, 245));
+    --button-bgimage-hover: linear-gradient(rgb(230, 230, 230), rgb(227, 227, 227));
+    --button-bgimage-active: var(--button-bgimage-active);
 }
 
 /*My photo --- rotate*/
@@ -36,6 +39,19 @@ a:active{
 
 a:visited{
     color: var(--link-visited-red-purple)
+}
+
+/*Buttons --- color*/
+button.Copy_Button{
+    background-image: var(--button-bgimage);
+}
+
+button.Copy_Button:hover{
+    background-image: var(--button-bgimage-hover);
+}
+
+button.Copy_Button:active{
+    background-image: var(--button-bgimage-active);
 }
 
 /*Website Link --- Tooltip*/
