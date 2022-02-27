@@ -36,7 +36,7 @@
 
     padding: 2px;
 
-    font-family: 'Fira Code', 'Courier New', sans-serif;
+    font-family: 'Fira Code', 'Consolas', sans-serif;
     font-size: 18px;
     color: indianred;
     vertical-align: middle;
@@ -72,7 +72,7 @@
 
     padding: 2px;
 
-    font-family: 'Fira Code', 'Courier New', sans-serif;
+    font-family: 'Fira Code', 'Consolas', sans-serif;
     font-size: 15px;
     color: indianred;
 }
@@ -87,7 +87,7 @@
 
     padding: 2px;
 
-    font-family: 'Fira Code', 'Courier New', sans-serif;
+    font-family: 'Fira Code', 'Consolas', sans-serif;
     font-size: 15px;
 }
 
@@ -125,7 +125,7 @@
 
     margin: 3px;
 
-    font-family: "Fira Code";
+    font-family: 'Fira Code', 'Consolas', sans-serif;
     font-size: 14px;
 }
 

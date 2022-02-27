@@ -1,7 +1,7 @@
 /*The Author*/
 div.Author{
     background-color: white;
-    width: 230px !important; /*Then the total width will be 260px*/
+    width: 230px !important; /*Then the total width will be 260px --- see the padding?*/
 
     padding: 15px;
 
