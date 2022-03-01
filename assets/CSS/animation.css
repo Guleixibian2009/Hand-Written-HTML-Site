@@ -63,19 +63,21 @@ div.Main_Body div.Main_Body_Article a.Link_With_Tooltip{
 div.Main_Body div.Main_Body_Article a.Link_With_Tooltip span.Tooltip_Word{
     visibility: hidden;
 
-    background-color: rgba(0, 0, 0, 0.8);
-    color: hsla(41, 100%, 95%, 0.9);
+    background-color: hsla(60, 100%, 95%, 0.9);
+    color: black;
 
     text-align: center;
 
     border-radius: 6px;
-    padding: 5px 0;
+    padding: 5px 3px 5px 3px;
 
     position: absolute;
     z-index: 1;
     top: 100%;
     left: 50%;
-    margin-left: -60px;
+    width: auto;
+    margin-left: -100px;
+    margin-right: -100px;
     
     /*To show it in 1s*/
     opacity: 0;
@@ -90,7 +92,7 @@ div.Main_Body div.Main_Body_Article a.Link_With_Tooltip span.Tooltip_Word::after
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: transparent transparent black transparent;
+    border-color: transparent transparent hsla(60, 100%, 95%, 0.9) transparent;
 }
     
 
