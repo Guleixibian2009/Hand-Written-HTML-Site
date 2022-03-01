@@ -57,3 +57,8 @@
         margin: 15px;
     }
 }
+
+::selection {
+    background: rgb(38, 42, 48);
+    color: rgb(238, 238, 238);
+  }
