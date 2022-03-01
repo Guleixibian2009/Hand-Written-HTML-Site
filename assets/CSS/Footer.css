@@ -1,0 +1,30 @@
+/*The Footer*/
+.Footer{
+    background-color: hsla(41, 100%, 95%, 0.9);
+    
+    border-style: solid;
+    border-width: medium;
+    border-color: indianred;
+
+    padding: 15px 15px;
+}
+
+.Footer p, .Footer a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    line-height: 30px;
+
+    margin: 3px;
+}
+
+.Footer i{
+    color: red;
+}
+
+.Footer strong{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 650;
+    text-decoration: underline;
+}

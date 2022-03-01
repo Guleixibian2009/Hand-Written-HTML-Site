@@ -1,0 +1,8 @@
+/*The music player*/
+.Background_Music_Button{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+
+    padding: 3px 2px 3px 3px;
+}

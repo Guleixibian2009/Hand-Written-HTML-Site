@@ -1,12 +1,3 @@
-/*The music player*/
-.Background_Music_Button{
-    position: fixed;
-    top: 10px;
-    left: 10px;
-
-    padding: 3px 2px 3px 3px;
-}
-
 /*The Grid-Container wrapper*/
 .Wrapper {
     display: grid;
@@ -28,6 +19,11 @@
     grid-row: 2 / 6;
 }
 
+.Footer{
+    grid-column: 2 / 6;
+    grid-row: 6 / 7;
+}
+
 @media screen and (max-width: 1000px) {
     body{
         background-image: url("https://s4.ax1x.com/2022/02/05/Hnigjs.jpg");
@@ -36,9 +32,6 @@
 
     .Wrapper{
         gap: 10px;
-
-        grid-template-columns: 100%;
-        grid-template-rows: auto auto auto auto auto auto auto auto auto;
     }
 
     .Header{
@@ -53,6 +46,11 @@
     .Main_Body{
         grid-column: 1 / 2;
         grid-row: 3 / 10;
+    }
+
+    .Footer{
+        grid-column: 1 / 2;
+        grid-row: 10 / 11;
     }
 
     .Header p{
