@@ -7,7 +7,6 @@ $(document).ready(function(){
 
         clipboard.on('success',(e)=>{
             console.log("Successfully copied to clipboard!");
-
             e.clearSelection();
         });
           
@@ -18,7 +17,7 @@ $(document).ready(function(){
         const Button = $(".Copy_Button");
         Button.html("<i class=\"fa fa-check fa-fw\"></i>");
         window.setTimeout(function(){
-            Button.html("<i class=\"fa fa-clipboard fa-fw\"></i>");
+            Button.html("<i class=\"fa fa-clone fa-fw\"></i>");
         },1000);
     });
 });
