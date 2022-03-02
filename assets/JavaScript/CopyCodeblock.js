@@ -1,19 +1,17 @@
 "use strict";
 $(document).ready(function(){
     $(".Copy_Button").click(function(){
-        var clip = new ClipboardJS(".Copy_Button",{
+        var clipboard = new ClipboardJS(".Copy_Button",{
             target:(trigger) => trigger.previousElementSibling,
         });
 
-        clip.on('success',(e)=>{
+        clipboard.on('success',(e)=>{
             console.log("Successfully copied to clipboard!");
             e.clearSelection();
-            clip.destroy();
         });
           
-        clip.on('error',()=>{
+        clipboard.on('error',()=>{
             console.error("Copy Failed!");
-            clip.destroy();
         });
 
         const Button = $(".Copy_Button");

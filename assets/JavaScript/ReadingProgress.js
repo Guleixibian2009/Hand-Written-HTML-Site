@@ -8,7 +8,7 @@ $(document).ready(function(){
         var CurrentWindowHeight = $(window).height();
         //Modern browser || Safari || IE
         var ScrollY = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
-        var percentage = (ScrollY / (BodyHeight - CurrentWindowHeight)) * 100;
+        var percentage = ((ScrollY + CurrentWindowHeight) / BodyHeight) * 100;
         const width = percentage.toFixed(2);
         return width;
     }
