@@ -43,10 +43,6 @@
         grid-row: 1 / 3;
     }
     
-    .Sidebar{
-        display: none;
-    }
-    
     .Main_Body{
         grid-column: 1 / 2;
         grid-row: 3 / 10;
