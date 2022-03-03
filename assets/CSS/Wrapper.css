@@ -35,6 +35,7 @@
 
     .Wrapper{
         gap: 10px;
+        grid-template-columns: 100%;
     }
 
     .Header{
