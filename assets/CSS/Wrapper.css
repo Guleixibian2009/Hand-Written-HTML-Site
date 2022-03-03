@@ -2,6 +2,9 @@
 .Wrapper {
     display: grid;
     gap: 20px;
+
+    /*To fix the original width of the Author div after fixed on page*/
+    grid-template-columns: 260px;
 }
 
 .Header{

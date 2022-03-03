@@ -22,6 +22,14 @@ $(document).ready(function(){
         //Get Progress_Bar width
         var width = GetBannerWidth();
         $("#Progress_Bar").css("width",`${width}%`);
+
+        //Fix the Author div's position
+        var percentage = GetPercentage();
+        if (percentage > 53) {
+            $(".Author").addClass("Author_Fixed");
+        } else {
+            $(".Author").removeClass("Author_Fixed");
+        }
     });
 
     $(window).resize(function(){

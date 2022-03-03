@@ -20,3 +20,10 @@
     border-style: none;
     padding: 0px;
 }
+
+/*To fix the Author div*/
+.Author_Fixed{
+    position: fixed !important;
+    left: 208px !important;
+    top: 20px !important;
+}
