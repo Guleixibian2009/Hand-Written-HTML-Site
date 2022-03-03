@@ -147,8 +147,8 @@
     font-size: 20px;
 }
 
-/*The Main_Body_Update_Date*/
-.Main_Body_Update_Date{
+/*The Main_Body_Update_Data*/
+.Main_Body_Update_Data{
     margin: 0px;
 
     border-style: none none none solid;
@@ -160,7 +160,7 @@
     padding: 5px
 }
 
-.Main_Body_Update_Date p, .Main_Body_Update_Date a{
+.Main_Body_Update_Data p, .Main_Body_Update_Data a{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 24px;
@@ -168,6 +168,6 @@
     margin: 0px 5px 5px 5px;
 }
 
-.Main_Body_Update_Date img{
+.Main_Body_Update_Data img{
     vertical-align: middle;
 }
