@@ -43,9 +43,9 @@ $(document).ready(function(){
         var HeaderHeight = GetHeaderHeight();
         var ScrollY = GetScrollY();
         if (ScrollY > HeaderHeight) {
-            $(".Author").addClass("Author_Fixed");
+            $(".Sidebar").addClass("Sidebar_Fixed");
         } else {
-            $(".Author").removeClass("Author_Fixed");
+            $(".Sidebar").removeClass("Sidebar_Fixed");
         }
     });
 
