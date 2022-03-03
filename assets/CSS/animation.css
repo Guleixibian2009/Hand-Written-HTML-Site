@@ -14,13 +14,13 @@
 }
 
 /*My photo --- rotate*/
-div.Author div.Author_Photo img#Author{
+.Sidebar .Author div.Author_Photo img#Author{
     transform: rotateZ(0deg); 
     /*Code from my generated site*/
     transition: transform 2s ease-in-out;
 }
 
-div.Author div.Author_Photo:hover img#Author{
+.Sidebar .Author div.Author_Photo:hover img#Author{
     transform: rotateZ(360deg);
 }
 
