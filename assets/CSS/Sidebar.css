@@ -76,11 +76,6 @@ div.Social_Link div.RSS{
     grid-area: 2 / 2 / 3 / 3;
 }
 
-div.Social_Link p{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
-}
-
 /*The Data div*/
 .Sidebar .Data{
     background-color: white;
@@ -91,4 +86,12 @@ div.Social_Link p{
 
     /*Code from W3School*/
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.49);
+}
+
+.Sidebar .Data h3{
+    font-family: "Fabfelt Script Bold", Arial, Helvetica;
+    font-size: 22px;
+    font-weight: 500;
+
+    text-align: center;
 }
