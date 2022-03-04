@@ -42,15 +42,15 @@ a:visited{
 }
 
 /*Buttons --- color*/
-button.Copy_Button{
+button{
     background-image: var(--button-bgimage);
 }
 
-button.Copy_Button:hover{
+button:hover{
     background-image: var(--button-bgimage-hover);
 }
 
-button.Copy_Button:active{
+button:active{
     background-image: var(--button-bgimage-active);
 }
 

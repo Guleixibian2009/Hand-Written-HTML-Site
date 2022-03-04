@@ -1,9 +1,15 @@
 /*The music player*/
 .Background_Music_Button{
     position: fixed;
-    top: 10px;
-    left: 10px;
+    top: 15px;
+    left: 15px;
+}
 
+.Background_Music_Button button{
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: black;
     padding: 3px 2px 3px 3px;
 }
 
