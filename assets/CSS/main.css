@@ -12,25 +12,25 @@ body {
 /*Define some fonts using @font-face*/
 @font-face {
     font-family: "Fira Code";
-    src: url("../Fonts/FiraCode-Regular.woff");
+    src: url("https://bitbucket.org/guleixibian2009/hand-written-html-site/raw/master/assets/Fonts/FiraCode-Regular.woff");
 }
 
 @font-face {
     font-family: "Fabfelt Script Bold";
-    src: url("../Fonts/FabfeltScript-Bold-2.woff");
+    src: url("https://bitbucket.org/guleixibian2009/hand-written-html-site/raw/master/assets/Fonts/FabfeltScript-Bold-2.woff");
 }
 
 @font-face {
     font-family: "Aquatico Regular";
-    src: url("../Fonts/Aquatico-Regular-2.woff");
+    src: url("https://bitbucket.org/guleixibian2009/hand-written-html-site/raw/master/assets/Fonts/Aquatico-Regular-2.woff");
 }
 
 @font-face {
     font-family: "Gagalin Regular";
-    src: url("../Fonts/Gagalin-Regular.woff");
+    src: url("https://bitbucket.org/guleixibian2009/hand-written-html-site/raw/master/assets/Fonts/Gagalin-Regular.woff");
 }
 
 @font-face {
     font-family: "Bigmouth Regular";
-    src: url("../Fonts/Bigmouth-Regular.woff");
+    src: url("https://bitbucket.org/guleixibian2009/hand-written-html-site/raw/master/assets/Fonts/Bigmouth-Regular.woff");
 }

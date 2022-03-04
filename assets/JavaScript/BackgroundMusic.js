@@ -12,7 +12,7 @@ $(document).ready(function(){
             Music_Button.html(" <i class=\"fas fa-pause\"></i> Axero/Itro--Move");
         }, 200);
         // Both " and / must be escaped!
-        $(Music_Button).after(" <audio id=\"BGM\" autoplay=\"autoplay\" src=\"..\/Hand-Written-HTML-Site\/assets\/Musics\/Move.mp3\"></audio>");
+        $(Music_Button).after(" <audio id=\"BGM\" autoplay=\"autoplay\" src=\"https:\/\/bitbucket.org\/guleixibian2009\/hand-written-html-site\/raw\/master\/assets\/Musics\/Move.mp3\"></audio>");
         $(Music_Button).slideToggle(200);
     }
 
