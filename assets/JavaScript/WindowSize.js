@@ -1,5 +1,6 @@
 "use strict";
 $(document).ready(function(){
+    //Update_Data
     //Horizontal = 1, Vertical = 0
     function ShowOrHide(WindowWidth){
         if (WindowWidth <= 1000) {
@@ -19,11 +20,10 @@ $(document).ready(function(){
         ShowOrHide(CurrentWindowWidth)
     });    
 
+    //Survey_Banner
     const banner = $(".Survey_Banner");
-
     function BannerDisappear(){
         $(banner).hide(500);
     }
-
     window.setTimeout(BannerDisappear, 6000);
 });
