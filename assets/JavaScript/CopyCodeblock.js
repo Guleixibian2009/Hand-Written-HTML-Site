@@ -1,5 +1,16 @@
 "use strict";
 $(document).ready(function(){
+    const Button = "button.Copy_Button";
+    $(Button).hide(1);
+
+    $("div.Code_Block").mouseenter(function(){
+        $(Button).fadeIn(200);
+    });
+
+    $("div.Code_Block").mouseleave(function(){
+        $(Button).fadeOut(200);
+    });
+
     $(".Copy_Button").click(function(){
         const CodeBlock = $(".Copy_Button").prev("span");
         var CopyCode = CodeBlock.text();
