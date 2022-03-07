@@ -11,6 +11,7 @@
     --button-bgimage: linear-gradient(rgb(252, 252, 252), rgb(245, 245, 245));
     --button-bgimage-hover: linear-gradient(rgb(230, 230, 230), rgb(227, 227, 227));
     --button-bgimage-active: var(--button-bgimage-hover);
+    --util-button-border-hover: rgb(49, 251, 184);
 }
 
 /*My photo --- rotate*/
@@ -113,4 +114,11 @@ div.Social_Link > div a:active{
 div.Social_Link > div:hover{
     background-color: rgb(238,238,238);
     transition: background-color 0.2s linear;
+}
+
+/*Util Buttons --- Border*/
+div.Util_Buttons > button:hover{
+    background-color: var(--button-bgimage);
+    border-color: var(--util-button-border-hover);
+    box-shadow: 1px 1px 1px rgba(49, 251, 251, 0.9), -1px -1px 1px rgba(49, 251, 251, 0.9);
 }
