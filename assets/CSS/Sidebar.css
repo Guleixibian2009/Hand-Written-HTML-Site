@@ -76,6 +76,28 @@ div.Social_Link div.RSS{
     grid-area: 2 / 2 / 3 / 3;
 }
 
+div.Social_Link > div {
+    background-color: white;
+
+    border-style: hidden;
+    border-radius: 5px;
+    padding: 3px;
+
+    text-align: center;
+}
+
+div.Social_Link > div span{
+    font-family: "Bigmouth Regular", Arial, Helvetica, sans-serif;
+}
+
+div.Social_Link > div a{
+    text-decoration: none;
+}
+
+div.Social_Link > div a:link{
+    color: black;
+}
+
 /*The Data div*/
 .Sidebar .Data{
     background-color: white;
