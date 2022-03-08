@@ -1,12 +1,15 @@
+"use strict";
 //The animation for the buttons
 $(document).ready(function(){
     const ButtonGroup = $(".Util_Buttons");
+    const BGMusic = $("#BG_Music");
     const BackToTop = $("#Back_To_Top");
     const FullScreen = $("#Full_Screen");
     const PageZoom = $("#Page_Zoom");
     const UtilsMain = $("#Utils_Main");
 
     function OnStart(){
+        $(BGMusic).hide();
         $(BackToTop).hide();
         $(FullScreen).hide();
         $(PageZoom).hide();
@@ -14,15 +17,17 @@ $(document).ready(function(){
     }
 
     function OnMainHover(){
+        $(BGMusic).show(800);
         $(BackToTop).show(600);
         $(FullScreen).show(400);
         $(PageZoom).show(200);
     }
 
     function MainNotHover(){
-        $(BackToTop).hide(200);
-        $(FullScreen).hide(400);
-        $(PageZoom).hide(600);
+        $(BGMusic).hide(200);
+        $(BackToTop).hide(400);
+        $(FullScreen).hide(600);
+        $(PageZoom).hide(800);
     }
 
     OnStart();
@@ -33,6 +38,33 @@ $(document).ready(function(){
 
     $(ButtonGroup).mouseleave(function(){
         MainNotHover();
+    });
+});
+
+//The Backgroud Music Button
+$(document).ready(function(){
+    const BGMusic = $("#BG_Music");
+    var status = 0;
+    // Not Playing = 0; Playing = 1;
+
+    function Start(){
+        status = 1;
+        // Both " and / must be escaped!
+        $(BGMusic).after(" <audio id=\"BGM\" autoplay=\"autoplay\" src=\"https:\/\/bitbucket.org\/guleixibian2009\/hand-written-html-site\/raw\/master\/assets\/Musics\/Move.mp3\"></audio>");
+    }
+
+    function Stop(){
+        status = 0;
+        // Both " and / must be escaped!
+        $("#BGM").remove();
+    }
+
+    $(BGMusic).click(function(){
+        if (status == 0) {
+            Start();
+        } else {
+            Stop();
+        }
     });
 });
 
