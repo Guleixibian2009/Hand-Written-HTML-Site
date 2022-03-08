@@ -12,6 +12,31 @@
     padding: 0px;
 }
 
+/*The Tip Bar*/
+#Tip_Bar{
+    background-color: rgb(221, 255, 255);
+
+    position: fixed;
+    top: 20px;
+    left: auto;
+    right: auto;
+
+    margin: 0px;
+
+    border-style: none none none solid;
+    border-left-color: cornflowerblue;
+    border-left-width: 3px;
+
+    padding: 10px;
+}
+
+#Tip_Bar span{
+    text-align: center;
+
+    font-size: 16px;
+    font-family: "Bigmouth Regular", Arial, Helvetica, sans-serif;
+}
+
 /*To fix the Author div*/
 .Sidebar_Fixed{
     position: fixed !important;

@@ -1,6 +1,7 @@
 "use strict";
 //The animation for the buttons
 $(document).ready(function(){
+    const TipBar = $("#Tip_Bar");
     const ButtonGroup = $(".Util_Buttons");
     const BGMusic = $("#BG_Music");
     const BackToTop = $("#Back_To_Top");
@@ -9,6 +10,7 @@ $(document).ready(function(){
     const UtilsMain = $("#Utils_Main");
 
     function OnStart(){
+        $(TipBar).hide();
         $(BGMusic).hide();
         $(BackToTop).hide();
         $(FullScreen).hide();
@@ -43,6 +45,7 @@ $(document).ready(function(){
 
 //The Backgroud Music Button
 $(document).ready(function(){
+    const TipBar = $("#Tip_Bar");
     const BGMusic = $("#BG_Music");
     var status = 0;
     // Not Playing = 0; Playing = 1;
@@ -51,12 +54,22 @@ $(document).ready(function(){
         status = 1;
         // Both " and / must be escaped!
         $(BGMusic).after(" <audio id=\"BGM\" autoplay=\"autoplay\" src=\"https:\/\/bitbucket.org\/guleixibian2009\/hand-written-html-site\/raw\/master\/assets\/Musics\/Move.mp3\"></audio>");
+        $(TipBar).html("<i class=\"fa fa-info\"></i> <span>Now playing: Axero\/Itro---Move!</span>");
+        $(TipBar).fadeIn(200);
+        window.setTimeout(function(){
+            $(TipBar).fadeOut(200);
+        }, 3000);
     }
 
     function Stop(){
         status = 0;
         // Both " and / must be escaped!
         $("#BGM").remove();
+        $(TipBar).html("<i class=\"fa fa-info\"></i> <span>The music has stoped</span>");
+        $(TipBar).fadeIn(200);
+        window.setTimeout(function(){
+            $(TipBar).fadeOut(200);
+        }, 3000);
     }
 
     $(BGMusic).click(function(){

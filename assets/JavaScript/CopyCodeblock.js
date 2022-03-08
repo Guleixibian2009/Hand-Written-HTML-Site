@@ -22,15 +22,20 @@ $(document).ready(function(){
         });
         
         Clip.on('success',(e)=>{
-            console.log("Successfully copied to clipboard!");
             e.clearSelection();
             Clip.destroy();
 
+            const TipBar = $("#Tip_Bar");
             const Button = $(".Copy_Button");
             Button.html("<i class=\"fa fa-check fa-fw\"></i>");
             window.setTimeout(function(){
                 Button.html("<i class=\"fa fa-clone fa-fw\"></i>");
             },1000);
+            $(TipBar).html("<i class=\"fa fa-clipboard\"></i> <span>Successfully copied to clipboard!</span>");
+            $(TipBar).fadeIn(200);
+            window.setTimeout(function(){
+                $(TipBar).fadeOut(200);
+            }, 3000);
         });
           
         Clip.on('error',()=>{
