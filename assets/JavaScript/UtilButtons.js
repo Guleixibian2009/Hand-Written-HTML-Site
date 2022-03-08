@@ -35,3 +35,13 @@ $(document).ready(function(){
         MainNotHover();
     });
 });
+
+//The Back To Top Button
+$(document).ready(function(){
+    const BackToTop = $("#Back_To_Top");
+
+    $(BackToTop).click(function(){
+        //flesher/jQuery.scrollTo method to create a linear animation
+        $.scrollTo(0,1000);
+    });
+});
