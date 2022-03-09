@@ -6,7 +6,6 @@ $(document).ready(function(){
     const BGMusic = $("#BG_Music");
     const BackToTop = $("#Back_To_Top");
     const FullScreen = $("#Full_Screen");
-    const PageZoom = $("#Page_Zoom");
     const ShareLink = $("#Share_Link");
     const UtilsMain = $("#Utils_Main");
 
@@ -15,7 +14,6 @@ $(document).ready(function(){
         $(BGMusic).hide();
         $(BackToTop).hide();
         $(FullScreen).hide();
-        $(PageZoom).hide();
         $(ShareLink).hide();
         $(UtilsMain).show();
     }
@@ -24,7 +22,6 @@ $(document).ready(function(){
         $(BGMusic).show(1000);
         $(BackToTop).show(800);
         $(FullScreen).show(600);
-        $(PageZoom).show(400);
         $(ShareLink).show(200);
     }
 
@@ -32,7 +29,6 @@ $(document).ready(function(){
         $(BGMusic).hide(200);
         $(BackToTop).hide(400);
         $(FullScreen).hide(600);
-        $(PageZoom).hide(800);
         $(ShareLink).hide(1000);
     }
 
