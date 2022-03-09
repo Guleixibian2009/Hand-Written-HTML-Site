@@ -65,7 +65,7 @@ $(document).ready(function(){
         status = 0;
         // Both " and / must be escaped!
         $("#BGM").remove();
-        $(TipBar).html("<i class=\"fa fa-info\"></i> <span>The music has stoped</span>");
+        $(TipBar).html("<i class=\"fa fa-info\"></i> <span>The music has stopped</span>");
         $(TipBar).fadeIn(200);
         window.setTimeout(function(){
             $(TipBar).fadeOut(200);
