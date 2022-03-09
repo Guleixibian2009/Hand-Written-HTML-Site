@@ -98,7 +98,7 @@
 }
 
 .Main_Body_Article .Code_Block{
-    background-color: rgb(244, 247, 250);
+    background-color: rgb(250, 250, 250);
 
     margin: 0px 5px 15px 5px;
     
@@ -107,7 +107,10 @@
     border-color: rgb(220, 230, 240);
     border-radius: 10px;
 
-    padding: 1em;
+    padding-top: 0.4em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 0.4em;
 }
 
 .Main_Body_Article .Code_Block{
@@ -125,7 +128,7 @@
 
     margin: 3px;
 
-    white-space: nowrap;
+    white-space: pre;
     overflow: auto;
 
     font-family: 'Fira Code', 'Consolas', sans-serif;
