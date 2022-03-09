@@ -7,6 +7,7 @@ $(document).ready(function(){
     const BackToTop = $("#Back_To_Top");
     const FullScreen = $("#Full_Screen");
     const PageZoom = $("#Page_Zoom");
+    const ShareLink = $("#Share_Link");
     const UtilsMain = $("#Utils_Main");
 
     function OnStart(){
@@ -15,14 +16,16 @@ $(document).ready(function(){
         $(BackToTop).hide();
         $(FullScreen).hide();
         $(PageZoom).hide();
+        $(ShareLink).hide();
         $(UtilsMain).show();
     }
 
     function OnMainHover(){
-        $(BGMusic).show(800);
-        $(BackToTop).show(600);
-        $(FullScreen).show(400);
-        $(PageZoom).show(200);
+        $(BGMusic).show(1000);
+        $(BackToTop).show(800);
+        $(FullScreen).show(600);
+        $(PageZoom).show(400);
+        $(ShareLink).show(200);
     }
 
     function MainNotHover(){
@@ -30,6 +33,7 @@ $(document).ready(function(){
         $(BackToTop).hide(400);
         $(FullScreen).hide(600);
         $(PageZoom).hide(800);
+        $(ShareLink).hide(1000);
     }
 
     OnStart();
@@ -130,5 +134,46 @@ $(document).ready(function(){
         } else {
             exitFullscreen();
         }
+    });
+});
+
+//The Share Link Button
+$(document).ready(function(){
+    const ShareLink = $("#Share_Link");
+
+    function GetLink(){
+        const Link = document.URL;
+        return Link;
+    }
+
+    $(ShareLink).click(function(){
+        var CurrentLink = GetLink();
+        const Clip = new ClipboardJS("#Share_Link",{
+            text : function(){
+                return CurrentLink;
+            }
+        });
+        
+        Clip.on('success',(e)=>{
+            e.clearSelection();
+            Clip.destroy();
+
+            const TipBar = $("#Tip_Bar");
+            $(TipBar).html("<i class=\"fa fa-clipboard\"></i> <span>Successfully copied link to clipboard!</span>");
+            $(TipBar).fadeIn(200);
+            window.setTimeout(function(){
+                $(TipBar).fadeOut(200);
+            }, 3000);
+        });
+          
+        Clip.on('error',()=>{
+            const TipBar = $("#Tip_Bar");
+            $(TipBar).html("<i class=\"fa fa-clipboard\"></i> <span>Copy failed!</span>");
+            $(TipBar).fadeIn(200);
+            window.setTimeout(function(){
+                $(TipBar).fadeOut(200);
+            }, 3000);
+            Clip.destroy();
+        });
     });
 });
