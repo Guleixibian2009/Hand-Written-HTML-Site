@@ -21,11 +21,6 @@ body {
 }
 
 @font-face {
-    font-family: "Aquatico Regular";
-    src: url("https://bitbucket.org/guleixibian2009/hand-written-html-site/raw/master/assets/Fonts/Aquatico-Regular-2.woff");
-}
-
-@font-face {
     font-family: "Gagalin Regular";
     src: url("https://bitbucket.org/guleixibian2009/hand-written-html-site/raw/master/assets/Fonts/Gagalin-Regular.woff");
 }
