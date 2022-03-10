@@ -29,3 +29,8 @@ body {
     font-family: "Bigmouth Regular";
     src: url("https://bitbucket.org/guleixibian2009/hand-written-html-site/raw/master/assets/Fonts/Bigmouth-Regular.woff");
 }
+
+@font-face {
+    font-family: "Wander Brave";
+    src: url("https://bitbucket.org/guleixibian2009/hand-written-html-site/raw/master/assets/Fonts/Wander-Brave-2.woff")
+}
