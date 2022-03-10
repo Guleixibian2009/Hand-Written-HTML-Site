@@ -32,8 +32,13 @@ $(document).ready(function(){
     var Scrolling = false;
     var Timer = undefined;
     function onMove(){
-        $("*").css({
-            "scrollbar-color": "skyblue peachpuff"
+        $("html").css({
+            "scrollbar-color": "skyblue peachpuff",
+            "scrollbar-width": "thin"
+        });
+        $("div.Code_Block").css({
+            "scrollbar-color": "skyblue peachpuff",
+            "scrollbar-width": "thin"
         });
         $("::-webkit-scrollbar-thumb").css({
             "background-color": "skyblue"
@@ -41,13 +46,18 @@ $(document).ready(function(){
     }
 
     function onStay(){
-        $("*").css({
+        $("html").css({
+            "scrollbar-color": "rgba(135, 206, 235, 0.6) rgba(255, 218, 185, 0.6)"
+        });
+        $("div.Code_Block").css({
             "scrollbar-color": "rgba(135, 206, 235, 0.6) rgba(255, 218, 185, 0.6)"
         });
         $("::-webkit-scrollbar-thumb").css({
             "background-color": "rgba(135, 206, 235, 0.6)"
         });
     }
+
+    onMove();
 
     $(window).mousemove(function(){
         Moving = true;
@@ -68,5 +78,15 @@ $(document).ready(function(){
             Scrolling = false;
             onStay();
         },1000);
-    })
+    });
+
+    $(window).mousedown(function(){
+        Scrolling = true;
+        clearTimeout(Timer);
+        onMove();
+        Timer = setTimeout(function(){
+            Scrolling = false;
+            onStay();
+        },1000);
+    });
 });

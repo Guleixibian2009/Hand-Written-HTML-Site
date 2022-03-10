@@ -14,6 +14,7 @@
 
 /*The Tip Bar*/
 #Tip_Bar{
+    display: none;
     z-index: 10;
 
     background-color: rgb(221, 255, 255);
@@ -97,9 +98,4 @@
     box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
     background: #ededed;
     border-radius: 10px;
-}
-
-*{
-    scrollbar-color: skyblue peachpuff;
-    scrollbar-width: thin;
 }
