@@ -17,7 +17,7 @@ header.Header h1{
     font-weight: bold;
 }
 
-header.Header p, header.Header a{
+header.Header p, header.Header a, header.Header marquee{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     text-decoration: none;

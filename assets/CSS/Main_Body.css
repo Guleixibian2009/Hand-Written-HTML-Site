@@ -82,6 +82,12 @@ div.Main_Body_Article a{
     text-decoration: underline;
 }
 
+div.Main_Body_Article hr{
+    color: indianred;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
 div.Main_Body_Article code{
     background-color: peachpuff;
 
