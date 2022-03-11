@@ -122,3 +122,34 @@ div.Util_Buttons > button:hover{
     border-color: var(--util-button-border-hover);
     box-shadow: 1px 1px 1px rgba(49, 251, 251, 0.9), -1px -1px 1px rgba(49, 251, 251, 0.9);
 }
+
+/*hr --- margin*/
+@keyframes HrMargin{
+    0%{
+        margin: 10px 100px;
+    }
+    50%{
+        margin: 10px 55px;
+    }
+    100%{
+        margin: 10px 10px;
+    }    
+}
+
+div.Main_Body_Article hr:hover{
+    animation: HrMargin 0.3s linear both;
+}
+
+/*headings --- padding-left*/
+@keyframes HeadingPadding{
+    0%{
+        padding-left: 0px;
+    }
+    100%{
+        padding-left: 40px;
+    }
+}
+
+h1:hover, h2:hover, h3:hover, h4:hover{
+    animation: HeadingPadding 0.5s ease-in-out both;
+}
