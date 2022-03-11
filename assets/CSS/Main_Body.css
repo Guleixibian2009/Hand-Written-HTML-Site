@@ -22,7 +22,7 @@
 
 .Main_Body_Title h2{
     text-align: left;
-    font-family: "Gagalin Regular", "Comic Sans MS"; /*There must me an alternate font otherwise the page will be ugly*/
+    font-family: "Gagalin Regular", "Comic Sans MS";
     font-size: 46px;
 
     margin: 5px;
@@ -50,6 +50,24 @@
     border-radius: 0px;
 
     padding: 5px
+}
+
+.Main_Body_Article h3{
+    margin: 10px 0px;
+
+    font-family: "Wander Brave", "Comic Sans MS";
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.Main_Body_Article h4{
+    margin: 10px 0px;
+
+    font-family: "Wander Brave", "Comic Sans MS";
+    font-size: 32px;
+    font-weight: 200;
+
+    color: rgb(94, 94, 94);
 }
 
 .Main_Body_Article p, .Main_Body_Article a{
@@ -95,6 +113,52 @@
     margin: 3px;
 
     vertical-align: middle;
+}
+
+.Main_Body_Article .Ordered_List ol{
+    padding-left: 70px;
+}
+
+.Main_Body_Article .Ordered_List ol li{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.Main_Body_Article .Ordered_List ol li span#Font_Fira_Code{
+    font-family: 'Fira Code';
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.Main_Body_Article .Ordered_List ol li span#Font_Bigmouth{
+    font-family: "Bigmouth Regular";
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.Main_Body_Article .Ordered_List ol li span#Font_Fabfelt_Script{
+    font-family: "Fabfelt Script Bold";
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.Main_Body_Article .Ordered_List ol li span#Font_Gagalin{
+    font-family: "Gagalin Regular";
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.Main_Body_Article .Ordered_List ol li span#Font_Wander_Brave{
+    font-family: "Wander Brave";
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.Main_Body_Article .Unordered_List ul li{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
 }
 
 .Main_Body_Article .Code_Block{
@@ -153,6 +217,17 @@
 
 .Main_Body_Article .Code_Block button i{
     font-size: 20px;
+}
+
+.Main_Body_Article strong{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 650;
+    text-decoration: underline;
+}
+
+.Main_Body_Article i{
+    color: red;
 }
 
 /*The Main_Body_Update_Data*/
