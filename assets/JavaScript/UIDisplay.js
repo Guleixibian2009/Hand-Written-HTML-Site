@@ -30,13 +30,14 @@ $(document).ready(function(){
     //Scroll_Bar
     var Moving = false;
     var Scrolling = false;
+    var MouseDown = false;
     var Timer = undefined;
     function onMove(){
         $("html").css({
             "scrollbar-color": "skyblue peachpuff",
             "scrollbar-width": "thin"
         });
-        $("div.Code_Block").css({
+        $("div.Code_Block span").css({
             "scrollbar-color": "skyblue peachpuff",
             "scrollbar-width": "thin"
         });
@@ -49,7 +50,7 @@ $(document).ready(function(){
         $("html").css({
             "scrollbar-color": "rgba(135, 206, 235, 0.6) rgba(255, 218, 185, 0.6)"
         });
-        $("div.Code_Block").css({
+        $("div.Code_Block span").css({
             "scrollbar-color": "rgba(135, 206, 235, 0.6) rgba(255, 218, 185, 0.6)"
         });
         $("::-webkit-scrollbar-thumb").css({
@@ -81,11 +82,11 @@ $(document).ready(function(){
     });
 
     $(window).mousedown(function(){
-        Scrolling = true;
+        MouseDown = true;
         clearTimeout(Timer);
         onMove();
         Timer = setTimeout(function(){
-            Scrolling = false;
+            MouseDown = false;
             onStay();
         },1000);
     });
