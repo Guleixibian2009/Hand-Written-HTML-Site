@@ -25,14 +25,14 @@ $(document).ready(function(){
     $(window).scroll(function(){
         //Get Progress_Bar width
         var width = GetBannerWidth();
-        $("#Progress_Bar").css("width",`${width}%`);
+        $("div#Progress_Bar").css("width",`${width}%`);
 
         //Fix the Author div's position
         //We also need the percentage of Header + margin-top
         //Then it will be ${ScrollY} / ${HeaderHeight}
         function GetHeaderHeight(){
-            var HeaderHeight = $(".Header").outerHeight();
-            var GridGap = parseInt($(".Wrapper").css("gap"));
+            var HeaderHeight = $("header.Header").outerHeight();
+            var GridGap = parseInt($("div.Wrapper").css("gap"));
             var MarginTop = parseInt($("body").css("margin-top"));
             var PaddingTop = parseInt($("body").css("padding-top"));
             var WholeHeight = HeaderHeight + MarginTop + PaddingTop + GridGap;
@@ -43,15 +43,15 @@ $(document).ready(function(){
         var HeaderHeight = GetHeaderHeight();
         var ScrollY = GetScrollY();
         if (ScrollY > HeaderHeight) {
-            $(".Sidebar").addClass("Sidebar_Fixed");
+            $("aside.Sidebar").addClass("Sidebar_Fixed");
         } else {
-            $(".Sidebar").removeClass("Sidebar_Fixed");
+            $("aside.Sidebar").removeClass("Sidebar_Fixed");
         }
     });
 
     $(window).resize(function(){
         var width = GetBannerWidth();
-        $("#Progress_Bar").css("width",`${width}%`);
+        $("div#Progress_Bar").css("width",`${width}%`);
     });
 });
 

@@ -1,6 +1,6 @@
 /*The Header part*/
-.Header{
-    background-color: hsla(41, 100%, 95%, 0.8);
+header.Header{
+    background-color: hsla(41, 100%, 95%, 0.9);
     
     border-style: solid;
     border-width: medium;
@@ -9,7 +9,7 @@
     padding: 0px 15px 15px;
 }
 
-.Header h1{
+header.Header h1{
     margin: 5px 0px 5px;
 
     font-family: "Gagalin Regular", "Comic Sans MS"; /*There must me an alternate font otherwise the page will be ugly*/;
@@ -17,7 +17,7 @@
     font-weight: bold;
 }
 
-.Header p, .Header a{
+header.Header p, header.Header a{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     text-decoration: none;
@@ -26,14 +26,14 @@
     margin: 3px;
 }
 
-.Header strong{
+header.Header strong{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     font-weight: 650;
     text-decoration: underline;
 }
 
-.Header code{
+header.Header code{
     background-color: peachpuff;
     margin: 0px 2px 0px;
 
@@ -48,7 +48,7 @@
 }
 
 /*The Survey Banner*/
-.Survey_Banner{
+div.Survey_Banner{
     background-color: rgb(221, 255, 255);
     margin: 10px 10px 10px 30px;
     border-style: none none none solid;
@@ -57,7 +57,7 @@
     padding: 8px;
 }
 
-.Survey_Banner p, .Survey_Banner a{
+div.Survey_Banner p, div.Survey_Banner a{
     font-family: "Bigmouth Regular", Arial, Helvetica, sans-serif;
     font-size: 18px;
     margin: 10px;

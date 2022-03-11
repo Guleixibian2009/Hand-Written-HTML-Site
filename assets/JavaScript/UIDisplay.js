@@ -10,7 +10,7 @@ $(document).ready(function(){
         }
     }
 
-    const Update_Data = $(".Main_Body_Update_Data");
+    const Update_Data = $("div.Main_Body_Update_Data");
     //Check the Width on opening
     var CurrentWindowWidth = parseInt($(window).width());
     ShowOrHide(CurrentWindowWidth);

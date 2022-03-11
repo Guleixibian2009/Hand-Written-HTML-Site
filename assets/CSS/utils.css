@@ -1,5 +1,5 @@
 /*The reading progress bar*/
-#Progress_Bar{
+div#Progress_Bar{
     position: fixed;
     left: 0;
     top: 0;
@@ -13,7 +13,7 @@
 }
 
 /*The Tip Bar*/
-#Tip_Bar{
+div#Tip_Bar{
     display: none;
     z-index: 10;
 
@@ -33,7 +33,7 @@
     padding: 10px;
 }
 
-#Tip_Bar span{
+div#Tip_Bar span{
     text-align: center;
 
     font-size: 16px;
@@ -41,14 +41,14 @@
 }
 
 /*To fix the Author div*/
-.Sidebar_Fixed{
+aside.Sidebar_Fixed{
     position: fixed !important;
     left: 208px !important;
     top: 20px !important;
 }
 
 /*The Utility Buttons*/
-.Util_Buttons{
+div.Util_Buttons{
     position: fixed;
     right: 60px;
     bottom: 60px;
@@ -59,7 +59,7 @@
     flex-direction: column;
 }
 
-.Util_Buttons > button{
+div.Util_Buttons > button{
     margin: 5px 0px 5px 0px;
     width: 30px;
     height: 30px;
@@ -70,7 +70,7 @@
     border-radius: 5px;
 }
 
-.Util_Buttons > button > i{
+div.Util_Buttons > button > i{
     font-size: 20px;
 }
 

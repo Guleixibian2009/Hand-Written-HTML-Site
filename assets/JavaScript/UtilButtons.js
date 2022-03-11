@@ -1,13 +1,13 @@
 "use strict";
 //The animation for the buttons
 $(document).ready(function(){
-    const TipBar = $("#Tip_Bar");
-    const ButtonGroup = $(".Util_Buttons");
-    const BGMusic = $("#BG_Music");
-    const BackToTop = $("#Back_To_Top");
-    const FullScreen = $("#Full_Screen");
-    const ShareLink = $("#Share_Link");
-    const UtilsMain = $("#Utils_Main");
+    const TipBar = $("div#Tip_Bar");
+    const ButtonGroup = $("div.Util_Buttons");
+    const BGMusic = $("button#BG_Music");
+    const BackToTop = $("button#Back_To_Top");
+    const FullScreen = $("button#Full_Screen");
+    const ShareLink = $("button#Share_Link");
+    const UtilsMain = $("button#Utils_Main");
 
     function OnStart(){
         $(TipBar).hide();
@@ -64,7 +64,7 @@ $(document).ready(function(){
     function Stop(){
         status = 0;
         // Both " and / must be escaped!
-        $("#BGM").remove();
+        $("audio#BGM").remove();
         $(TipBar).html("<i class=\"fa fa-info\"></i> <span>The music has stopped</span>");
         $(TipBar).fadeIn(200);
         window.setTimeout(function(){
@@ -83,7 +83,7 @@ $(document).ready(function(){
 
 //The Back To Top Button
 $(document).ready(function(){
-    const BackToTop = $("#Back_To_Top");
+    const BackToTop = $("button#Back_To_Top");
 
     $(BackToTop).click(function(){
         //flesher/jQuery.scrollTo method to create a linear animation
@@ -93,7 +93,7 @@ $(document).ready(function(){
 
 //The Full Screen Button
 $(document).ready(function(){
-    const FullScreen = $("#Full_Screen");
+    const FullScreen = $("button#Full_Screen");
     var ScreenStatus = 0;
 
     function StartFullScreen(element){
@@ -135,7 +135,7 @@ $(document).ready(function(){
 
 //The Share Link Button
 $(document).ready(function(){
-    const ShareLink = $("#Share_Link");
+    const ShareLink = $("button#Share_Link");
 
     function GetLink(){
         const Link = document.URL;
@@ -144,7 +144,7 @@ $(document).ready(function(){
 
     $(ShareLink).click(function(){
         var CurrentLink = GetLink();
-        const Clip = new ClipboardJS("#Share_Link",{
+        const Clip = new ClipboardJS("button#Share_Link",{
             text : function(){
                 return CurrentLink;
             }
@@ -154,7 +154,7 @@ $(document).ready(function(){
             e.clearSelection();
             Clip.destroy();
 
-            const TipBar = $("#Tip_Bar");
+            const TipBar = $("div#Tip_Bar");
             $(TipBar).html("<i class=\"fa fa-clipboard\"></i> <span>Successfully copied link to clipboard!</span>");
             $(TipBar).fadeIn(200);
             window.setTimeout(function(){
@@ -163,7 +163,7 @@ $(document).ready(function(){
         });
           
         Clip.on('error',()=>{
-            const TipBar = $("#Tip_Bar");
+            const TipBar = $("div#Tip_Bar");
             $(TipBar).html("<i class=\"fa fa-clipboard\"></i> <span>Copy failed!</span>");
             $(TipBar).fadeIn(200);
             window.setTimeout(function(){

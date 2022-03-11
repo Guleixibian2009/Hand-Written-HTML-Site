@@ -1,5 +1,5 @@
 /*The Author*/
-.Sidebar .Author{
+aside.Sidebar div.Author{
     background-color: white;
     width: 230px !important; /*Then the total width will be 260px --- see the padding?*/
 
@@ -10,11 +10,11 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.49);
 }
 
-.Sidebar .Author div.Author_Photo{
+aside.Sidebar div.Author div.Author_Photo{
     padding: 2px;
 }
 
-.Sidebar .Author div.Author_Photo img#Author{
+aside.Sidebar div.Author div.Author_Photo img#Author{
     display: block;
 
     border-style: solid;
@@ -27,12 +27,12 @@
     width: 167px;
 }
 
-.Sidebar .Author div.Author_Data p#Author_Name,
-.Sidebar .Author div.Author_Data p#Author_Sentence{
+aside.Sidebar div.Author div.Author_Data p#Author_Name,
+aside.Sidebar div.Author div.Author_Data p#Author_Sentence{
     text-align: center;
 }
 
-.Sidebar .Author div.Author_Data p#Author_Name{
+aside.Sidebar div.Author div.Author_Data p#Author_Name{
     margin: 10px 3px 3px 3px;
 
     border-style: none;
@@ -42,7 +42,7 @@
     font-weight: 800;
 }
 
-.Sidebar .Author div.Author_Data p#Author_Sentence{
+aside.Sidebar div.Author div.Author_Data p#Author_Sentence{
     margin-top: 10px;
 
     border-style: none;
@@ -99,7 +99,7 @@ div.Social_Link > div a:link{
 }
 
 /*The Data div*/
-.Sidebar .Data{
+aside.Sidebar div.Data{
     background-color: white;
     width: 230px !important; /*Then the total width will be 260px --- see the padding?*/
 
@@ -110,7 +110,7 @@ div.Social_Link > div a:link{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.49);
 }
 
-.Sidebar .Data h3{
+aside.Sidebar div.Data h3{
     font-family: "Fabfelt Script Bold", Arial, Helvetica;
     font-size: 22px;
     font-weight: 500;
