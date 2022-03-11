@@ -26,9 +26,7 @@ I have tried several times before, but the effect wasn't exactly what I wanted. 
 
 ### 1\. The Main Core --- HTML
 
-Well, this site is completely Hand-Written. I don't use any generators, yes, no `Jekyll`, no `Hexo`, and no `BootStrap`. I wrote it by hand. So thanks to [VSCode](https://code.visualstudio.com/) I can write `HTML` easily.
-
-I used `HTML5` so I can use the `<audio>` tag. See that `<!DOCTYPE html>` ?
+Well, this site is completely Hand-Written. I don't use any generators, yes, no `Jekyll`, no `Hexo`, and no `BootStrap`. I wrote it by hand. I used `HTML5` so I can use the `<audio>` tag. See that `<!DOCTYPE html>` ?
 
 * * *
 
@@ -36,7 +34,7 @@ I used `HTML5` so I can use the `<audio>` tag. See that `<!DOCTYPE html>` ?
 
 #### 2.1 About the appearence and animations
 
-If a website ia a person, then `CSS` is his skin. I used `CSS3` to create fantastic appearence for this site. All the background, heading, everything on the page are beautified by `CSS`.
+If a website is a person, then `CSS` is his skin. I used `CSS3` to create fantastic appearence for this site. All the background, heading, everything on the page are beautified by `CSS`.
 
 Try hover on my photo on the left. It will spin when your mouse is over it. And try those links too! There will be a Tooltip. Some of the animations are created by `CSS`. Now let me give you an example:
 
