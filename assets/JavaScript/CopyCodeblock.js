@@ -1,18 +1,20 @@
 "use strict";
 $(document).ready(function(){
-    const Button = "button.Copy_Button";
-    $(Button).hide(1);
+    const ButtonGroup = "button.Copy_Button";
+    $(ButtonGroup).hide(1);
 
     $("div.Code_Block").mouseenter(function(){
+        const Button = $(this).children("button");
         $(Button).fadeIn(200);
     });
 
     $("div.Code_Block").mouseleave(function(){
+        const Button = $(this).children("button");
         $(Button).fadeOut(200);
     });
 
     $(".Copy_Button").click(function(){
-        const CodeBlock = $(".Copy_Button").prev("span");
+        const CodeBlock = $(this).prev("span");
         var CopyCode = CodeBlock.text();
 
         const Clip = new ClipboardJS(".Copy_Button",{
