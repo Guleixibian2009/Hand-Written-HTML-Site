@@ -57,11 +57,11 @@ button:active{
 
 /*Website Link --- Tooltip*/
 /*Code from W3School*/
-div.Main_Body div.Main_Body_Article a.Link_With_Tooltip{
+main.Main_Body div.Main_Body_Article a.Link_With_Tooltip{
     position: relative;
 }
 
-div.Main_Body div.Main_Body_Article a.Link_With_Tooltip span.Tooltip_Word{
+main.Main_Body div.Main_Body_Article a.Link_With_Tooltip span.Tooltip_Word{
     visibility: hidden;
 
     background-color: hsla(60, 100%, 95%, 0.9);
@@ -85,7 +85,7 @@ div.Main_Body div.Main_Body_Article a.Link_With_Tooltip span.Tooltip_Word{
     transition: opacity 1s;
 }
 
-div.Main_Body div.Main_Body_Article a.Link_With_Tooltip span.Tooltip_Word::after {
+main.Main_Body div.Main_Body_Article a.Link_With_Tooltip span.Tooltip_Word::after {
     content: " ";
     position: absolute;
     bottom: 100%;
@@ -97,7 +97,7 @@ div.Main_Body div.Main_Body_Article a.Link_With_Tooltip span.Tooltip_Word::after
 }
     
 
-div.Main_Body div.Main_Body_Article a.Link_With_Tooltip:hover span.Tooltip_Word{
+main.Main_Body div.Main_Body_Article a.Link_With_Tooltip:hover span.Tooltip_Word{
     visibility: visible;
     opacity: 1;
 }
