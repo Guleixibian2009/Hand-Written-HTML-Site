@@ -33,6 +33,10 @@ header.Header strong{
     text-decoration: underline;
 }
 
+header.Header marquee i{
+    color: gold;
+}
+
 header.Header code{
     background-color: peachpuff;
     margin: 0px 2px 0px;
