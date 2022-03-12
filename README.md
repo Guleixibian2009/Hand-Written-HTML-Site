@@ -137,7 +137,7 @@ I'm not a professional programmer, so I used some `npm` packages. They are:
 
 The package I like most is `highlightJS`. It's a package to "highlight" your code on a website. It supports more than 180 languages, and it provides many themes. I used the `Atom One Light Theme`. The basics are like this:
 
-```HT
+```HTML
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/styles/atom-one-light.min.css"> 
 <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/highlight.min.js"></script> 
 <script>hljs.highlightAll();</script>
