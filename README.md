@@ -12,7 +12,7 @@ Any great ideas or suggestions? [Contact Us Now!](mailto:guleixibian2009@outlook
 
 ## About this project ---- `Hand-Written-HTML-Site`
 
-### 0\. Introduction
+### 0. Introduction
 
 I started the `Hand-Written-HTML-Site` project on 2022.2.5. I do have a website (actually two), but they are all generated, [one by `Jekyll`](https://guleixibian.github.io/) and [one by `Hexo`](https://guleixibian2009.github.io/) .
 
@@ -24,13 +24,13 @@ I have tried several times before, but the effect wasn't exactly what I wanted. 
 
 * * *
 
-### 1\. The Main Core --- HTML
+### 1. The Main Core --- HTML
 
 Well, this site is completely Hand-Written. I don't use any generators, yes, no `Jekyll`, no `Hexo`, and no `BootStrap`. I wrote it by hand. I used `HTML5` so I can use the `<audio>` tag. See that `<!DOCTYPE html>` ?
 
 * * *
 
-### 2\. UI --- CSS and more
+### 2. UI --- CSS and more
 
 #### 2.1 About the appearence and animations
 
@@ -39,13 +39,11 @@ If a website is a person, then `CSS` is his skin. I used `CSS3` to create fantas
 Try hover on my photo on the left. It will spin when your mouse is over it. And try those links too! There will be a Tooltip. Some of the animations are created by `CSS`. Now let me give you an example:
 
 ```css
-/\*My photo --- rotate\*/ 
-.Sidebar .Author div.Author\_Photo img#Author{ 
-    transform: rotateZ(0deg); 
-    /\*Code from my generated site\*/ 
+.Sidebar .Author div.Author_Photo img#Author{ 
+    transform: rotateZ(0deg);
     transition: transform 2s ease-in-out; 
 } 
-.Sidebar .Author div.Author\_Photo:hover img#Author{ 
+.Sidebar .Author div.Author_Photo:hover img#Author{ 
     transform: rotateZ(360deg); 
 }
 ```
@@ -97,7 +95,7 @@ Go to [my repo](https://github.com/guleixibian2009/hand-written-html-site/) and 
 
 * * *
 
-### 3\. All the functions --- JavaScript
+### 3. All the functions --- JavaScript
 
 the use of `JavaScript` (actually `jQuery`) allows me to create beautiful animation and function. The `Utility Buttons` the `Survey Banner` are built with `jQuery`. You can Press F12 or Ctrl + Shift + I to view the source code!
 
@@ -112,7 +110,7 @@ For example:
 ```JS
 "use strict"; 
 $(document).ready(function(){ 
-    const banner = $(".Survey\_Banner"); 
+    const banner = $(".Survey_Banner"); 
     function BannerDisappear(){ 
         $(banner).hide(500); 
     } 
