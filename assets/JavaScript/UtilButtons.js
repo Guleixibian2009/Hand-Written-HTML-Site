@@ -50,35 +50,31 @@ $(document).ready(function(){
     var status = 0;
     // Not Playing = 0; Playing = 1;
 
-    function Start(){
-        status = 1;
-        // Both " and / must be escaped!
-        $(BGMusic).after(" <audio id=\"BGM\" autoplay=\"autoplay\" src=\"https:\/\/bitbucket.org\/guleixibian2009\/hand-written-html-site\/raw\/master\/assets\/Musics\/Move.mp3\"></audio>");
-        $(TipBar).html("<i class=\"fa fa-info\"></i> <span>Now playing: Axero\/Itro---Move!</span>");
-        $(TipBar).fadeIn(200);
-        window.setTimeout(function(){
-            $(TipBar).fadeOut(200);
-        }, 3000);
-    }
+    var audio = document.createElement("audio");
+    audio.src = "https://bitbucket.org/guleixibian2009/hand-written-html-site/raw/master/assets/Musics/Move.mp3";
+    audio.load();
 
-    function Stop(){
-        status = 0;
-        // Both " and / must be escaped!
-        $("audio#BGM").remove();
-        $(TipBar).html("<i class=\"fa fa-info\"></i> <span>The music has stopped</span>");
-        $(TipBar).fadeIn(200);
-        window.setTimeout(function(){
-            $(TipBar).fadeOut(200);
-        }, 3000);
-    }
-
-    $(BGMusic).click(function(){
-        if (status == 0) {
-            Start();
-        } else {
-            Stop();
-        }
-    });
+    audio.addEventListener("canplaythrough",
+        $(BGMusic).click(function(){
+            if (status == 0){
+                status = 1;
+                audio.play();
+                $(TipBar).html("<i class=\"fa fa-info\"></i> <span>Now playing: Axero\/Itro---Move!</span>");
+                $(TipBar).fadeIn(200);
+                window.setTimeout(function(){
+                    $(TipBar).fadeOut(200);
+                }, 3000);
+            } else {
+                status = 0;
+                audio.pause();
+                $(TipBar).html("<i class=\"fa fa-info\"></i> <span>The music has stopped</span>");
+                $(TipBar).fadeIn(200);
+                window.setTimeout(function(){
+                    $(TipBar).fadeOut(200);
+                }, 3000);
+            }
+        })
+    );
 });
 
 //The Back To Top Button
