@@ -91,3 +91,32 @@ $(document).ready(function(){
         },1000);
     });
 });
+
+//Follow mouse
+$(document).ready(function(){
+    const followOptions = {
+        color : 'indianred',
+        height : 10,
+        width : 10,
+        transitionDelay: 0,
+        transitionDuration: 100
+    };
+    const follow = new MouseFollow(followOptions);
+    follow.initialize();
+
+    const body = document.documentElement;
+    body.addEventListener("click", () => {
+        follow.update({
+            height : 30,
+            width : 30,
+            opacity : 0.6
+        });
+        window.setTimeout(function(){
+            follow.update({
+                height : 10,
+                width : 10,
+                opacity : 1
+            });
+        }, 1000);
+    });
+});
