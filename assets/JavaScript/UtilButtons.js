@@ -45,7 +45,6 @@ $(document).ready(function(){
 
 //The Backgroud Music Button
 $(document).ready(function(){
-    /*
     const TipBar = $("#Tip_Bar");
     const BGMusic = $("#BG_Music");
     var status = 0;
@@ -76,7 +75,6 @@ $(document).ready(function(){
             }
         })
     );
-    */
 });
 
 //The Back To Top Button
