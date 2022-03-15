@@ -3,6 +3,7 @@
 $(document).ready(function(){
     const TipBar = $("div#Tip_Bar");
     const ButtonGroup = $("div.Util_Buttons");
+    const ReadAload = $("button#Read_Aloud");
     const BGMusic = $("button#BG_Music");
     const BackToTop = $("button#Back_To_Top");
     const FullScreen = $("button#Full_Screen");
@@ -11,6 +12,7 @@ $(document).ready(function(){
 
     function OnStart(){
         $(TipBar).hide();
+        $(ReadAload).hide();
         $(BGMusic).hide();
         $(BackToTop).hide();
         $(FullScreen).hide();
@@ -19,16 +21,18 @@ $(document).ready(function(){
     }
 
     function OnMainHover(){
-        $(BGMusic).show(1000);
-        $(BackToTop).show(800);
-        $(FullScreen).show(600);
+        $(ReadAload).show(1000);
+        $(BGMusic).show(800);
+        $(BackToTop).show(600);
+        $(FullScreen).show(400);
         $(ShareLink).show(200);
     }
 
     function MainNotHover(){
-        $(BGMusic).hide(200);
-        $(BackToTop).hide(400);
-        $(FullScreen).hide(600);
+        $(ReadAload).hide(200);
+        $(BGMusic).hide(400);
+        $(BackToTop).hide(600);
+        $(FullScreen).hide(800);
         $(ShareLink).hide(1000);
     }
 
@@ -49,7 +53,7 @@ $(document).ready(function(){
     const TipBar = $("div#Tip_Bar");
     const BGMusic = $("button#BG_Music");
     var status = 0;
-    // Not Playing = 0; Playing = 1;
+    //Not Playing = 0; Playing = 1;
 
     var Music = new Howl({
         src: [MusicPath],

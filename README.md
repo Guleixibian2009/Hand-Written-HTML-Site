@@ -188,7 +188,9 @@ Visitor counting isn't that hard. Just put away those expensive projects! `busua
 
 Currently I have {Sorry, not loaded} visitors and {Sorry, not loaded} page views in total. Get the magic? It's so easy that you only need one line of code!
 
+```HTML
 <script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
+```
 
 There are two display moods. One is `Page View`, the other is `User View`. You can choose what you need. [Count your visitors](https://busuanzi.ibruce.info)!
 
