@@ -45,36 +45,41 @@ $(document).ready(function(){
 
 //The Backgroud Music Button
 $(document).ready(function(){
-    const TipBar = $("#Tip_Bar");
-    const BGMusic = $("#BG_Music");
+    const MusicPath = "https://bitbucket.org/guleixibian2009/hand-written-html-site/raw/master/assets/Musics/Move.mp3";
+    const TipBar = $("div#Tip_Bar");
+    const BGMusic = $("button#BG_Music");
     var status = 0;
     // Not Playing = 0; Playing = 1;
 
-    var audio = document.createElement("audio");
-    audio.src = "https://bitbucket.org/guleixibian2009/hand-written-html-site/raw/master/assets/Musics/Move.mp3";
-    audio.load();
+    var Music = new Howl({
+        src: [MusicPath],
+        autoplay: false,
+        loop: true,
+        volume: 0.0,
+        preload: true
+    });
 
-    audio.addEventListener("canplaythrough",
-        $(BGMusic).click(function(){
-            if (status == 0){
-                status = 1;
-                audio.play();
-                $(TipBar).html("<i class=\"fa fa-info\"></i> <span>Now playing: Axero\/Itro---Move!</span>");
-                $(TipBar).fadeIn(200);
-                window.setTimeout(function(){
-                    $(TipBar).fadeOut(200);
-                }, 3000);
-            } else {
-                status = 0;
-                audio.pause();
-                $(TipBar).html("<i class=\"fa fa-info\"></i> <span>The music has stopped</span>");
-                $(TipBar).fadeIn(200);
-                window.setTimeout(function(){
-                    $(TipBar).fadeOut(200);
-                }, 3000);
-            }
-        })
-    );
+    $(BGMusic).click(function(){
+        if (status == 0){
+            status = 1;
+            Music.play();
+            Music.fade(0.0, 1.0, 1000);
+            $(TipBar).html("<i class=\"fa fa-info\"></i> <span>Now playing: Axero\/Itro---Move!</span>");
+            $(TipBar).fadeIn(200);
+            window.setTimeout(function(){
+                $(TipBar).fadeOut(200);
+            }, 3000);
+        } else {
+            status = 0;
+            Music.fade(1.0, 0.0, 1000);
+            Music.pause();
+            $(TipBar).html("<i class=\"fa fa-info\"></i> <span>The music has stopped</span>");
+            $(TipBar).fadeIn(200);
+            window.setTimeout(function(){
+                $(TipBar).fadeOut(200);
+            }, 3000);
+        }
+    });
 });
 
 //The Back To Top Button
