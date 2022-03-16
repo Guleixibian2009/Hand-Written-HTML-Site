@@ -47,6 +47,54 @@ $(document).ready(function(){
     });
 });
 
+//The Read Aload Button
+$(document).ready(function(){
+    const Article = $("header.Header").text() + $("main.Main_Body").text() + $("footer.Footer").text();
+    const ReadAload = $("button#Read_Aloud");
+    const TipBar = $("div#Tip_Bar");
+    var status = 2;
+    //Not Playing = 0; Playing = 1; Unstarted = 2;
+    //First get article.
+    //Then "Utter" it.
+
+    
+
+    $(ReadAload).click(function(){
+        switch (status) {
+            case 0:
+                status = 1;
+                window.speechSynthesis.resume(msg);
+                $(TipBar).html("<i class=\"fa fa-info\"></i> <span>Now reading the article for you!</span>");
+                $(TipBar).fadeIn(200);
+                window.setTimeout(function(){
+                    $(TipBar).fadeOut(200);
+                }, 3000);
+                break;
+            case 1:
+                status = 0;
+                window.speechSynthesis.pause(msg);
+                $(TipBar).html("<i class=\"fa fa-info\"></i> <span>The reading has stopped</span>");
+                $(TipBar).fadeIn(200);
+                window.setTimeout(function(){
+                    $(TipBar).fadeOut(200);
+                }, 3000);
+                break;
+            case 2:
+                status = 1;
+                var msg = new SpeechSynthesisUtterance();
+                msg.text = Article;
+                msg.voice = window.speechSynthesis.getVoices()[2];
+                speechSynthesis.speak(msg);
+                $(TipBar).html("<i class=\"fa fa-info\"></i> <span>Now reading the article for you!</span>");
+                $(TipBar).fadeIn(200);
+                window.setTimeout(function(){
+                    $(TipBar).fadeOut(200);
+                }, 3000);
+                break;
+        }
+    });
+});
+
 //The Backgroud Music Button
 $(document).ready(function(){
     const MusicPath = "https://bitbucket.org/guleixibian2009/hand-written-html-site/raw/master/assets/Musics/Move.mp3";
