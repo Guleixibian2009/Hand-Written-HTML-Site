@@ -117,7 +117,8 @@ div.Social_Link > div:hover{
 }
 
 /*Util Buttons --- Border*/
-div.Util_Buttons > button:hover{
+div.Util_Buttons > button:hover,
+div.Util_Buttons > div#Volume_Wrapper:hover{
     background-color: var(--button-bgimage);
     border-color: var(--util-button-border-hover);
     box-shadow: 1px 1px 1px rgba(49, 251, 251, 0.9), -1px -1px 1px rgba(49, 251, 251, 0.9);

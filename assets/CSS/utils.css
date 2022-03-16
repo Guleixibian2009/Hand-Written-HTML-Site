@@ -49,18 +49,21 @@ aside.Sidebar_Fixed{
 
 /*The Utility Buttons*/
 div.Util_Buttons{
+    display: grid;
+    gap: 5px;
+    grid-template-rows: 30px 30px 30px 30px 30px 30px;
+    grid-template-columns: 30px 30px;
+
     position: fixed;
     right: 60px;
     bottom: 60px;
 
     padding: 10px;
-
-    display: flex;
-    flex-direction: column;
 }
 
 div.Util_Buttons > button{
-    margin: 5px 0px 5px 0px;
+    grid-column: 2 / 3;
+
     width: 30px;
     height: 30px;
 
@@ -70,8 +73,47 @@ div.Util_Buttons > button{
     border-radius: 5px;
 }
 
+div.Util_Buttons > button#Volume_Wrapper{
+    grid-column: 1 / 2 !important;
+    grid-row: 1 / 7;
+    height: 205px;
+}
+
 div.Util_Buttons > button > i{
     font-size: 20px;
+}
+
+div.Util_Buttons > button#Read_Aloud{
+    grid-row: 1 / 2;
+}
+
+div.Util_Buttons > button#BG_Music{
+    grid-row: 2 / 3;
+}
+
+div.Util_Buttons > button#Back_To_Top{
+    grid-row: 3 / 4;
+}
+
+div.Util_Buttons > button#Full_Screen{
+    grid-row: 4 / 5;
+}
+
+div.Util_Buttons > button#Share_Link{
+    grid-row: 5 / 6;
+}
+
+div.Util_Buttons > button#Utils_Main{
+    grid-row: 6 / 7;
+}
+
+div.Util_Buttons > button#Volume_Wrapper > input#Volume{
+    transform: rotate(-90deg) translateY(-75px);
+    width: 165px;
+}
+
+div.Util_Buttons > button#Volume_Wrapper > div#Volume_Icon > i{
+    transform: translateY(75px);
 }
 
 /*The Scroll Bar*/
