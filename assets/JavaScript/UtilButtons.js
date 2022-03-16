@@ -9,6 +9,7 @@ $(document).ready(function(){
     const FullScreen = $("button#Full_Screen");
     const ShareLink = $("button#Share_Link");
     const UtilsMain = $("button#Utils_Main");
+    const VolumeChooser = $("button#Volume_Wrapper");
 
     function OnStart(){
         $(TipBar).hide();
@@ -17,10 +18,12 @@ $(document).ready(function(){
         $(BackToTop).hide();
         $(FullScreen).hide();
         $(ShareLink).hide();
+        $(VolumeChooser).hide();
         $(UtilsMain).show();
     }
 
     function OnMainHover(){
+        $(VolumeChooser).show(1000);
         $(ReadAload).show(1000);
         $(BGMusic).show(800);
         $(BackToTop).show(600);
@@ -29,6 +32,7 @@ $(document).ready(function(){
     }
 
     function MainNotHover(){
+        $(VolumeChooser).hide(1000);
         $(ReadAload).hide(200);
         $(BGMusic).hide(400);
         $(BackToTop).hide(600);
@@ -47,6 +51,14 @@ $(document).ready(function(){
     });
 });
 
+//The volume Chooser
+$(document).ready(function(){
+    const VolumeChooser = $("input#Volume");
+    $(VolumeChooser).bind("input propertychange", function(){
+        window.CurrentVolume = VolumeChooser.val();
+    });
+});
+
 //The Read Aload Button
 $(document).ready(function(){
     const Article = $("header.Header").text() + $("main.Main_Body").text() + $("footer.Footer").text();
@@ -54,10 +66,6 @@ $(document).ready(function(){
     const TipBar = $("div#Tip_Bar");
     var status = 2;
     //Not Playing = 0; Playing = 1; Unstarted = 2;
-    //First get article.
-    //Then "Utter" it.
-
-    
 
     $(ReadAload).click(function(){
         switch (status) {
