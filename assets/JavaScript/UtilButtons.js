@@ -54,8 +54,14 @@ $(document).ready(function(){
 //The volume Chooser
 $(document).ready(function(){
     const VolumeChooser = $("input#Volume");
+    window.CurrentVolume = {
+        volume : "1.0"
+    };
+
     $(VolumeChooser).bind("input propertychange", function(){
-        window.CurrentVolume = VolumeChooser.val();
+        window.CurrentVolume = {
+            volume : VolumeChooser.val()
+        };
     });
 });
 
@@ -64,13 +70,14 @@ $(document).ready(function(){
     const Article = $("header.Header").text() + $("main.Main_Body").text() + $("footer.Footer").text();
     const ReadAload = $("button#Read_Aloud");
     const TipBar = $("div#Tip_Bar");
-    var status = 2;
+    msg = undefined;
+    var ReadStatus = 2;
     //Not Playing = 0; Playing = 1; Unstarted = 2;
 
     $(ReadAload).click(function(){
-        switch (status) {
+        switch (ReadStatus) {
             case 0:
-                status = 1;
+                ReadStatus = 1;
                 window.speechSynthesis.resume(msg);
                 $(TipBar).html("<i class=\"fa fa-info\"></i> <span>Now reading the article for you!</span>");
                 $(TipBar).fadeIn(200);
@@ -79,7 +86,7 @@ $(document).ready(function(){
                 }, 3000);
                 break;
             case 1:
-                status = 0;
+                ReadStatus = 0;
                 window.speechSynthesis.pause(msg);
                 $(TipBar).html("<i class=\"fa fa-info\"></i> <span>The reading has stopped</span>");
                 $(TipBar).fadeIn(200);
@@ -88,8 +95,9 @@ $(document).ready(function(){
                 }, 3000);
                 break;
             case 2:
-                status = 1;
-                var msg = new SpeechSynthesisUtterance();
+                ReadStatus = 1;
+                msg = new SpeechSynthesisUtterance();
+                msg.lang = "en";
                 msg.text = Article;
                 msg.voice = window.speechSynthesis.getVoices()[2];
                 speechSynthesis.speak(msg);
@@ -105,10 +113,11 @@ $(document).ready(function(){
 
 //The Backgroud Music Button
 $(document).ready(function(){
+    const VolumeChooser = $("input#Volume");
     const MusicPath = "https://bitbucket.org/guleixibian2009/hand-written-html-site/raw/master/assets/Musics/Move.mp3";
     const TipBar = $("div#Tip_Bar");
     const BGMusic = $("button#BG_Music");
-    var status = 0;
+    var MusicStatus = 0;
     //Not Playing = 0; Playing = 1;
 
     var Music = new Howl({
@@ -120,8 +129,8 @@ $(document).ready(function(){
     });
 
     $(BGMusic).click(function(){
-        if (status == 0){
-            status = 1;
+        if (MusicStatus == 0){
+            MusicStatus = 1;
             Music.play();
             Music.fade(0.0, 1.0, 1000);
             $(TipBar).html("<i class=\"fa fa-info\"></i> <span>Now playing: Axero\/Itro---Move!</span>");
@@ -129,8 +138,14 @@ $(document).ready(function(){
             window.setTimeout(function(){
                 $(TipBar).fadeOut(200);
             }, 3000);
+
+            $(VolumeChooser).bind("input propertychange", function(){
+                if (MusicStatus == 1) {
+                    Howler.volume(parseFloat(window.CurrentVolume.volume));
+                }
+            });
         } else {
-            status = 0;
+            MusicStatus = 0;
             Music.fade(1.0, 0.0, 1000);
             Music.pause();
             $(TipBar).html("<i class=\"fa fa-info\"></i> <span>The music has stopped</span>");
