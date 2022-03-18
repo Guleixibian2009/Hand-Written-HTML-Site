@@ -44,6 +44,7 @@
         <script src="assets/JavaScript/UIDisplay.js"></script>
         <script src="assets/JavaScript/UtilButtons.js"></script>
         <script src="assets/JavaScript/CodeHighlight.js"></script>
+        <script src="assets/JavaScript/LikeSurvey.js"></script>
     </head>
     <body>
         <div class="Welcome Dialogue">
@@ -356,6 +357,7 @@ https://img.shields.io/badge/&lt;LABEL&gt;-&lt;MESSAGE&gt;-&lt;COLOR&gt;/
                         <strong>If you like this site, you can <a href="https://github.com/guleixibian2009/hand-written-html-site/" target="_blank">clone this repo down</a>. 
                         Maybe you can give me a star? </strong><i class="fa fa-heart faa-pulse faa-fast animated"></i>
                     </section>
+                    <hr />
                 </div>
 
                 <div class="Main_Body_Update_Data">
@@ -366,7 +368,13 @@ https://img.shields.io/badge/&lt;LABEL&gt;-&lt;MESSAGE&gt;-&lt;COLOR&gt;/
                 </div>
 
                 <div class="Like_Survey">
-                    <dialog open="open">
+                    <p>To help us make this site better, please take this little survey!</p>
+                    <p>
+                        <button id="Start_Like_Survey">Take the survey</button>
+                        <a href="https://github.com/Guleixibian2009/Hand-Written-HTML-Site/" target="_blank"><button>Contribute on GitHub</button></a>
+                        <a href="https://github.com/Guleixibian2009/Hand-Written-HTML-Site/archive/refs/heads/master.zip"><button>Download this site</button></a>
+                    </p>
+                    <dialog id="Like_Survey">
                         <p>Thank you for taking this survey! Please choose the option that corresponds with your feelings now.</p>
                         <form method="dialog">
                             <p>
@@ -386,7 +394,7 @@ https://img.shields.io/badge/&lt;LABEL&gt;-&lt;MESSAGE&gt;-&lt;COLOR&gt;/
                           </form>
                     </dialog>
 
-                    <output></output>
+                    <p id="Output"></p>
                 </div>
             </main>
 

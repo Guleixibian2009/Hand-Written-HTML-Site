@@ -268,6 +268,25 @@ div.Main_Body_Update_Data img{
 }
 
 /*The like survey*/
+div.Like_Survey p{
+    text-align: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+div.Like_Survey p button{
+    height: 30px;
+
+    margin-left: 10px;
+    margin-right: 10px;
+
+    border-style: solid;
+    border-width: thin;
+    border-color: black;
+}
+
 div.Like_Survey dialog{
     position: fixed;
     bottom: 0px;
@@ -299,7 +318,7 @@ div.Like_Survey dialog p, div.Like_Survey dialog form p label{
 }
 
 div.Like_Survey dialog form menu{
-    padding-left: 0px;
+    text-align: center;
 }
 
 div.Like_Survey dialog form menu button{
@@ -309,4 +328,12 @@ div.Like_Survey dialog form menu button{
     border-width: thin;
     border-color: black;
     border-radius: 5px;
+}
+
+div.Like_Survey output{
+    text-align: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
 }
