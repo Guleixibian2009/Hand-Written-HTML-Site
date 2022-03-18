@@ -70,7 +70,7 @@ $(document).ready(function(){
     const Article = $("header.Header").text() + $("main.Main_Body").text() + $("footer.Footer").text();
     const ReadAload = $("button#Read_Aloud");
     const TipBar = $("div#Tip_Bar");
-    msg = undefined;
+    var msg = undefined;
     var ReadStatus = 2;
     //Not Playing = 0; Playing = 1; Unstarted = 2;
 

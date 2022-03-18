@@ -49,6 +49,8 @@ aside.Sidebar_Fixed{
 
 /*The Utility Buttons*/
 div.Util_Buttons{
+    z-index: 100;
+
     display: grid;
     gap: 5px;
     grid-template-rows: 30px 30px 30px 30px 30px 30px;
