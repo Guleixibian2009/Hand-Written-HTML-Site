@@ -339,3 +339,22 @@ div.Like_Survey output{
     font-size: 16px;
     line-height: 24px;
 }
+
+/*The Counters*/
+main.Main_Body{
+    counter-reset: section;
+}
+
+main.Main_Body h3::before{
+    counter-increment: section;
+    content: counter(section) ". ";
+}
+
+main.Main_Body h3{
+    counter-reset: subsection;
+}
+
+main.Main_Body h4::before{
+    counter-increment: subsection;
+    content: counter(section)"."counter(subsection)" ";
+}
