@@ -42,7 +42,7 @@ $(document).ready(function(){
 
     OnStart();
 
-    $(ButtonGroup).mouseenter(function(){
+    $(UtilsMain).mouseenter(function(){
         OnMainHover();
     });
 

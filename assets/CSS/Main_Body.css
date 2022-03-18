@@ -86,6 +86,8 @@ div.Main_Body_Article hr{
     border-color: indianred;
     margin-left: 100px;
     margin-right: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 
     height: 5px;
     background-color: indianred;
