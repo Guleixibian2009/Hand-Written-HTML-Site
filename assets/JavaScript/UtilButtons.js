@@ -10,6 +10,7 @@ $(document).ready(function(){
     const ShareLink = $("button#Share_Link");
     const UtilsMain = $("button#Utils_Main");
     const VolumeChooser = $("button#Volume_Wrapper");
+    window.TipBarClock = window.setTimeout(function(){}, 0);
 
     function OnStart(){
         $(TipBar).hide();
@@ -53,6 +54,7 @@ $(document).ready(function(){
 
 //The volume Chooser
 $(document).ready(function(){
+    const TipBar = $("div#Tip_Bar");
     const VolumeChooser = $("input#Volume");
     window.CurrentVolume = {
         volume : "1.0"
@@ -62,6 +64,15 @@ $(document).ready(function(){
         window.CurrentVolume = {
             volume : VolumeChooser.val()
         };
+    });
+
+    $(VolumeChooser).hover(function(){
+        window.clearTimeout(window.TipBarClock);
+        $(TipBar).html("<i class=\"fa fa-info\"></i> <span>Change the volume of the Background Music.</span>");
+        $(TipBar).fadeIn(200);
+        window.TipBarClock = window.setTimeout(function(){
+            $(TipBar).fadeOut(200);
+        }, 3000);
     });
 });
 
@@ -79,6 +90,7 @@ $(document).ready(function(){
             case 0:
                 ReadStatus = 1;
                 window.speechSynthesis.resume(msg);
+                window.clearTimeout(window.TipBarClock);
                 $(TipBar).html("<i class=\"fa fa-info\"></i> <span>Now reading the article for you!</span>");
                 $(TipBar).fadeIn(200);
                 window.setTimeout(function(){
@@ -88,6 +100,7 @@ $(document).ready(function(){
             case 1:
                 ReadStatus = 0;
                 window.speechSynthesis.pause(msg);
+                window.clearTimeout(window.TipBarClock);
                 $(TipBar).html("<i class=\"fa fa-info\"></i> <span>The reading has stopped</span>");
                 $(TipBar).fadeIn(200);
                 window.setTimeout(function(){
@@ -101,6 +114,7 @@ $(document).ready(function(){
                 msg.text = Article;
                 msg.voice = window.speechSynthesis.getVoices()[2];
                 speechSynthesis.speak(msg);
+                window.clearTimeout(window.TipBarClock);
                 $(TipBar).html("<i class=\"fa fa-info\"></i> <span>Now reading the article for you!</span>");
                 $(TipBar).fadeIn(200);
                 window.setTimeout(function(){
@@ -108,6 +122,15 @@ $(document).ready(function(){
                 }, 3000);
                 break;
         }
+    });
+
+    $(ReadAload).hover(function(){
+        window.clearTimeout(window.TipBarClock);
+        $(TipBar).html("<i class=\"fa fa-info\"></i> <span>Read the article aloud.</span>");
+        $(TipBar).fadeIn(200);
+        window.setTimeout(function(){
+            $(TipBar).fadeOut(200);
+        }, 3000);
     });
 });
 
@@ -133,6 +156,7 @@ $(document).ready(function(){
             MusicStatus = 1;
             Music.play();
             Music.fade(0.0, 1.0, 1000);
+            window.clearTimeout(window.TipBarClock);
             $(TipBar).html("<i class=\"fa fa-info\"></i> <span>Now playing: Axero\/Itro---Move!</span>");
             $(TipBar).fadeIn(200);
             window.setTimeout(function(){
@@ -148,6 +172,7 @@ $(document).ready(function(){
             MusicStatus = 0;
             Music.fade(1.0, 0.0, 1000);
             Music.pause();
+            window.clearTimeout(window.TipBarClock);
             $(TipBar).html("<i class=\"fa fa-info\"></i> <span>The music has stopped</span>");
             $(TipBar).fadeIn(200);
             window.setTimeout(function(){
@@ -155,20 +180,40 @@ $(document).ready(function(){
             }, 3000);
         }
     });
+
+    $(BGMusic).hover(function(){
+        window.clearTimeout(window.TipBarClock);
+        $(TipBar).html("<i class=\"fa fa-info\"></i> <span>A Background Music for ya!</span>");
+        $(TipBar).fadeIn(200);
+        window.setTimeout(function(){
+            $(TipBar).fadeOut(200);
+        }, 3000);
+    });
 });
 
 //The Back To Top Button
 $(document).ready(function(){
+    const TipBar = $("div#Tip_Bar");
     const BackToTop = $("button#Back_To_Top");
 
     $(BackToTop).click(function(){
         //flesher/jQuery.scrollTo method to create a linear animation
         $.scrollTo(0,1000);
     });
+
+    $(BackToTop).hover(function(){
+        window.clearTimeout(window.TipBarClock);
+        $(TipBar).html("<i class=\"fa fa-info\"></i> <span>Back to the top.</span>");
+        $(TipBar).fadeIn(200);
+        window.setTimeout(function(){
+            $(TipBar).fadeOut(200);
+        }, 3000);
+    });
 });
 
 //The Full Screen Button
 $(document).ready(function(){
+    const TipBar = $("div#Tip_Bar");
     const FullScreen = $("button#Full_Screen");
     var ScreenStatus = 0;
 
@@ -207,10 +252,20 @@ $(document).ready(function(){
             exitFullscreen();
         }
     });
+
+    $(FullScreen).hover(function(){
+        window.clearTimeout(window.TipBarClock);
+        $(TipBar).html("<i class=\"fa fa-info\"></i> <span>Read this article Full Screen.</span>");
+        $(TipBar).fadeIn(200);
+        window.setTimeout(function(){
+            $(TipBar).fadeOut(200);
+        }, 3000);
+    });
 });
 
 //The Share Link Button
 $(document).ready(function(){
+    const TipBar = $("div#Tip_Bar");
     const ShareLink = $("button#Share_Link");
 
     function GetLink(){
@@ -229,8 +284,7 @@ $(document).ready(function(){
         Clip.on('success',(e)=>{
             e.clearSelection();
             Clip.destroy();
-
-            const TipBar = $("div#Tip_Bar");
+            window.clearTimeout(window.TipBarClock);
             $(TipBar).html("<i class=\"fa fa-clipboard\"></i> <span>Successfully copied link to clipboard!</span>");
             $(TipBar).fadeIn(200);
             window.setTimeout(function(){
@@ -239,13 +293,22 @@ $(document).ready(function(){
         });
           
         Clip.on('error',()=>{
-            const TipBar = $("div#Tip_Bar");
             $(TipBar).html("<i class=\"fa fa-clipboard\"></i> <span>Copy failed!</span>");
             $(TipBar).fadeIn(200);
+            window.clearTimeout(window.TipBarClock);
             window.setTimeout(function(){
                 $(TipBar).fadeOut(200);
             }, 3000);
             Clip.destroy();
         });
+    });
+
+    $(ShareLink).hover(function(){
+        window.clearTimeout(window.TipBarClock);
+        $(TipBar).html("<i class=\"fa fa-info\"></i> <span>Copy the link of the page so you can share it.</span>");
+        $(TipBar).fadeIn(200);
+        window.setTimeout(function(){
+            $(TipBar).fadeOut(200);
+        }, 3000);
     });
 });
