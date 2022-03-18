@@ -15,10 +15,24 @@ $(document).ready(function(){
     });
 
     Select.addEventListener("change", function(){
-        ConfirmButton.value = Select.value;
+        ConfirmButton.value = Select.options[Select.selectedIndex].id;
     });
 
     Dialog.addEventListener("close", function(){
-        Output.innerText = Dialog.returnValue;
+        var value = Dialog.returnValue;
+        switch (value){
+            case "option1":{
+                Output.innerHTML = "Thank you! I'll always try to make it better. You can download the source code if you wish!";
+                break;
+            }
+            case "option2":{
+                Output.innerHTML = "Have some great ideas? Contribute on GitHub!";
+                break;
+            }
+            case "option3":{
+                Output.innerHTML = "I'm sorry to hear that. If you have any opinions, please <a href=\"mailto://guleixibian2009@outlook.com\">contact me</a>."
+                break;
+            }
+        }
     });
 });
