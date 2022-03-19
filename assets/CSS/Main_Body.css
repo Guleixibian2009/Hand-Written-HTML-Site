@@ -347,7 +347,7 @@ main.Main_Body{
 
 main.Main_Body h3::before{
     counter-increment: section;
-    content: counter(section) ". ";
+    content: "0x0"counter(section) ".";
 }
 
 main.Main_Body h3{
@@ -356,5 +356,5 @@ main.Main_Body h3{
 
 main.Main_Body h4::before{
     counter-increment: subsection;
-    content: counter(section)"."counter(subsection)" ";
+    content: "0x0"counter(section)"."counter(subsection)" ";
 }
