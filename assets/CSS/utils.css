@@ -40,11 +40,17 @@ div#Tip_Bar span{
     font-family: "Bigmouth Regular", Arial, Helvetica, sans-serif;
 }
 
-/*To fix the Author div*/
+/*To fix the Author div and TOC*/
 aside.Sidebar_Fixed{
     position: fixed !important;
-    left: 208px !important;
+    left: 108px !important;
     top: 20px !important;
+}
+
+nav.TOC_Fixed{
+    position: fixed !important;
+    right: 108px;
+    top:20px;
 }
 
 /*The Utility Buttons*/

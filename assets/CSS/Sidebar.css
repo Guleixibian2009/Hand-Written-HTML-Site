@@ -134,3 +134,15 @@ aside.Sidebar div.Data div.Busuanzi_Data span#busuanzi_container_site_pv, aside.
 
     margin: 3px;
 }
+
+/*The TOC*/
+nav.TOC{
+    background-color: white;
+    width: 230px !important; /*Then the total width will be 260px --- see the padding?*/
+
+    margin-bottom: 20px;
+    padding: 15px;
+
+    /*Code from W3School*/
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.49);
+}

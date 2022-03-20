@@ -4,11 +4,11 @@ div.Wrapper {
     gap: 20px;
 
     /*To fix the original width of the Author div after fixed on page*/
-    grid-template-columns: 260px;
+    grid-template-columns: 260px auto 260px;
 }
 
 header.Header{
-    grid-column: 1 / 6;
+    grid-column: 1 / 4;
     grid-row: 1 / 2;
 }
 
@@ -18,13 +18,18 @@ aside.Sidebar{
 }
 
 main.Main_Body{
-    grid-column: 2 / 6;
+    grid-column: 2 / 3;
     grid-row: 2 / 6;
 }
 
 footer.Footer{
-    grid-column: 2 / 6;
+    grid-column: 2 / 3;
     grid-row: 6 / 7;
+}
+
+nav.TOC{
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
 }
 
 @media screen and (max-width: 1000px) {

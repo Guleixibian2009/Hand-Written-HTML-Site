@@ -44,8 +44,10 @@ $(document).ready(function(){
         var ScrollY = GetScrollY();
         if (ScrollY > HeaderHeight) {
             $("aside.Sidebar").addClass("Sidebar_Fixed");
+            $("nav.TOC").addClass("TOC_Fixed");
         } else {
             $("aside.Sidebar").removeClass("Sidebar_Fixed");
+            $("nav.TOC").removeClass("TOC_Fixed");
         }
     });
 
