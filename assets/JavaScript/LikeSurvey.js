@@ -26,11 +26,11 @@ $(document).ready(function(){
                 break;
             }
             case "option2":{
-                Output.innerHTML = "Have some great ideas? Contribute on GitHub!";
+                Output.innerHTML = "Have some great ideas? Open an issue and contribute on GitHub!";
                 break;
             }
             case "option3":{
-                Output.innerHTML = "I'm sorry to hear that. If you have any opinions, please <a href=\"mailto://guleixibian2009@outlook.com\">contact me</a>."
+                Output.innerHTML = "I'm sorry to hear that. If you really do have some opinions, please <a href=\"mailto://guleixibian2009@outlook.com\">contact me</a>."
                 break;
             }
         }

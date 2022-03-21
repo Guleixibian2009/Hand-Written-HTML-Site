@@ -154,3 +154,7 @@ nav.TOC h3{
 
     text-align: center;
 }
+
+nav.TOC ul#TOC{
+    padding-left: 15px;
+}

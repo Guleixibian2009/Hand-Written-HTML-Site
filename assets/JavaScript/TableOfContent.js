@@ -8,16 +8,23 @@ $(document).ready(function(){
     for (let i = 0; i < AritcleChildren.length; i++) {
         const el = AritcleChildren.item(i);
         if (el.nodeName == "H3" || el.nodeName == "H4") {
-            console.log(el ,"is h3 or h4!");
-            HeadingList[HeadingList.length + 1] = el;
-        } else {
-            console.debug("el is not h3 or h4");
+            HeadingList[HeadingList.length] = el;
         }
     }
-    
     //Next turn them into <li> and give them correct classes
-
-    //Finally wrap them in a <ul> and output!
+    var OutputList = `<h3>Table Of Contents</h3><ul id="TOC">`
+    HeadingList.forEach(el => {
+        if (el.nodeName == "H3"){
+            var outputClass = "TOC_Item_H3";
+        } else if (el.nodeName == "H4"){
+            var outputClass = "TOC_Item_H4";
+        }
+        var output = `<li class="${outputClass}">${el.innerHTML}</li>`;
+        OutputList = OutputList + output;
+    });
+    OutputList = OutputList + `</ul>`;
+    //Finally output!
+    $("nav.TOC").html(OutputList);
 
 
     //First highlight the first <li> by giving it an extra class
