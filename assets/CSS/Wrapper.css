@@ -32,7 +32,7 @@ nav.TOC{
     grid-row: 2 / 3;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
     body{
         background-image: url("https://s1.ax1x.com/2022/03/10/bhK8w4.jpg");
         padding: 20px 30px 20px;

@@ -154,3 +154,23 @@ div.Main_Body_Article hr:hover{
 main.Main_Body h2:hover, main.Main_Body h3:hover, main.Main_Body h4:hover{
     animation: HeadingPadding 0.5s ease-in-out both;
 }
+
+/*TOC_Item --- border*/
+@keyframes TOCBorder{
+    0%{
+        border-top-color: rgba(255, 166, 0, 0);
+        border-bottom-color: rgba(255, 166, 0, 0);
+    }
+    50%{
+        border-top-color: rgba(255, 166, 0, 0.5);
+        border-bottom-color: rgba(255, 166, 0, 0.5);
+    }
+    100%{
+        border-top-color: orange;
+        border-bottom-color: orange;
+    }
+}
+
+nav.TOC ul#TOC li:hover{
+    animation: TOCBorder 0.1s ease-out both;
+}
