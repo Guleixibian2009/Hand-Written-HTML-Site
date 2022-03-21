@@ -16,10 +16,12 @@ $(document).ready(function(){
     HeadingList.forEach(el => {
         if (el.nodeName == "H3"){
             var outputClass = "TOC_Item_H3";
+            el.id = $(el).text();
         } else if (el.nodeName == "H4"){
             var outputClass = "TOC_Item_H4";
+            el.id = $(el).text();
         }
-        var output = `<li class="${outputClass}">${el.innerHTML}</li>`;
+        var output = `<a href="#${el.id}"><li class="${outputClass}">${el.innerHTML}</li></a>`;
         OutputList = OutputList + output;
     });
     OutputList = OutputList + `</ul>`;

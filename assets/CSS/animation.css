@@ -174,3 +174,7 @@ main.Main_Body h2:hover, main.Main_Body h3:hover, main.Main_Body h4:hover{
 nav.TOC ul#TOC li:hover{
     animation: TOCBorder 0.1s ease-out both;
 }
+
+nav.TOC ul#TOC a:hover{
+    color: indianred;
+}

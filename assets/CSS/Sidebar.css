@@ -160,7 +160,12 @@ nav.TOC ul#TOC{
     list-style-type: none;
 }
 
-nav.TOC ul#TOC li{
+nav.TOC ul#TOC a{
+    color: black;
+    text-decoration: none;
+}
+
+nav.TOC ul#TOC a li{
     margin: 5px 0px 5px 0px;
 
     border-style: solid;
@@ -168,14 +173,14 @@ nav.TOC ul#TOC li{
     border-width: 2px;
 }
 
-nav.TOC ul#TOC li.TOC_Item_H3{
+nav.TOC ul#TOC a li.TOC_Item_H3{
     list-style-type: circle;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 24px;
 }
 
-nav.TOC ul#TOC li.TOC_Item_H4{
+nav.TOC ul#TOC a li.TOC_Item_H4{
     padding-left: 16px;
 
     list-style-type: disc;
