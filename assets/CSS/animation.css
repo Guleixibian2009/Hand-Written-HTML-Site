@@ -151,6 +151,6 @@ div.Main_Body_Article hr:hover{
     }
 }
 
-header.Header h1:hover, main.Main_Body h2:hover, main.Main_Body h3:hover, main.Main_Body h4:hover{
+main.Main_Body h2:hover, main.Main_Body h3:hover, main.Main_Body h4:hover{
     animation: HeadingPadding 0.5s ease-in-out both;
 }

@@ -62,6 +62,10 @@ nav.TOC{
         grid-row: 10 / 11;
     }
 
+    nav.TOC{
+        display: none;
+    }
+
     .Header p{
         margin: 15px;
     }
