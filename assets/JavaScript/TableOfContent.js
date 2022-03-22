@@ -13,15 +13,21 @@ $(document).ready(function(){
     }
     //Next turn them into <li> and give them correct classes
     var OutputList = `<h3>Table Of Contents</h3><ul id="TOC">`
+    var heading = 0;
+    var subheading = 0;
     HeadingList.forEach(el => {
         if (el.nodeName == "H3"){
+            heading++;
+            subheading = 0;
             var outputClass = "TOC_Item_H3";
             el.id = $(el).text();
+            var output = `<li class="${outputClass}">${heading}. ${el.innerHTML}</li>`
         } else if (el.nodeName == "H4"){
+            subheading++
             var outputClass = "TOC_Item_H4";
             el.id = $(el).text();
+            var output = `<li class="${outputClass}">${heading}.${subheading} ${el.innerHTML}</li>`
         }
-        var output = `<a href="#${el.id}"><li class="${outputClass}">${el.innerHTML}</li></a>`;
         OutputList = OutputList + output;
     });
     OutputList = OutputList + `</ul>`;
