@@ -169,13 +169,15 @@ nav.TOC ul#TOC li{
 }
 
 nav.TOC ul#TOC li.TOC_Item_H3{
+    padding-left: 15px;
+
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 24px;
 }
 
 nav.TOC ul#TOC li.TOC_Item_H4{
-    padding-left: 16px;
+    padding-left: 30px;
 
     font-family: "Fabfelt Script Bold", Arial, Helvetica;
     font-size: 14px;

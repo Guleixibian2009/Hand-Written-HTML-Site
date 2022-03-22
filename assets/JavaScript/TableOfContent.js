@@ -36,15 +36,22 @@ $(document).ready(function(){
 
 
     //First highlight the first <li> by giving it an extra class
-
+    $("nav ul li:first").addClass("TOC_Current");
     //On Scroll, go through the array
-
-    //Get the element's YOffSet
-
-    //If it's smaller than 20 and bigger than -20
-
-    //Highlight it and remove the older one
-
+    $(window).scroll(function(){
+        for (let index = 0; index < HeadingList.length; index++) {
+            //Get the element's distance to the top
+            var heading = HeadingList[index];
+            var OffsetY = heading.getBoundingClientRect().top;
+            //If it's smaller than 50 and bigger than -50
+            if (OffsetY < 50 && OffsetY > -50){
+                console.log(index);
+                $("li.TOC_Current").removeClass("TOC_Current");
+                $(`nav ul li`).eq(index).addClass("TOC_Current");
+            }
+            //Highlight it and remove the older one
+        }
+    });
 
     //When clicked, get the id and it's YOffSet
     $("nav li").click(function(){
@@ -53,7 +60,10 @@ $(document).ready(function(){
         var heading = document.getElementById(destination);
         var headingY = heading.offsetTop;
         //Use jQuery.scrollTo to create a linear animation
-        $.scrollTo(headingY,800);
+        $.scrollTo(headingY-40,800);
     });
-    
-})
+
+    $("nav h3").click(function(){
+        $.scrollTo(0,800);
+    });
+});
