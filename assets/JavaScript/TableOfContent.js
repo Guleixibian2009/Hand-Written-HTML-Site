@@ -45,7 +45,6 @@ $(document).ready(function(){
             var OffsetY = heading.getBoundingClientRect().top;
             //If it's smaller than 50 and bigger than -50
             if (OffsetY < 50 && OffsetY > -50){
-                console.log(index);
                 $("li.TOC_Current").removeClass("TOC_Current");
                 $(`nav ul li`).eq(index).addClass("TOC_Current");
             }

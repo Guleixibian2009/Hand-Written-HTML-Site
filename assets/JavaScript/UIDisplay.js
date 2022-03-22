@@ -104,3 +104,18 @@ $(document).ready(function(){
     const follow = new MouseFollow(followOptions);
     follow.initialize();
 });
+
+//The title
+$(document).ready(function(){
+    document.title = "🎉Hand-Written-HTML-Site";
+    window.onfocus = function () {
+        window.setTimeout(function(){
+            document.title = '🎉Hand-Written-HTML-Site';
+        }, 200);
+    };
+    window.onblur = function () {
+        window.setTimeout(function(){
+            document.title = '⏳Loading...';
+        }, 200);
+    };
+});

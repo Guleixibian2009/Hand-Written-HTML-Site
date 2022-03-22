@@ -177,6 +177,7 @@ nav.TOC ul#TOC li:hover{
 }
 
 nav.TOC ul#TOC li:hover{
+    cursor: pointer;
     color: lightcoral;
 }
 

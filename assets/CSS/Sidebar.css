@@ -115,6 +115,8 @@ aside.Sidebar div.Data h3{
     font-size: 22px;
     font-weight: 500;
 
+    margin: 12px 0px 12px 0px;
+
     text-align: center;
 }
 
@@ -151,6 +153,8 @@ nav.TOC h3{
     font-family: "Fabfelt Script Bold", Arial, Helvetica;
     font-size: 22px;
     font-weight: 500;
+
+    margin: 12px 0px 12px 0px;
 
     text-align: center;
 }
