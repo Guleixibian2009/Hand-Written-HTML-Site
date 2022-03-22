@@ -26,13 +26,13 @@ I have tried several times before, but the effect wasn't exactly what I wanted. 
 
 ### The Main Core --- HTML
 
-Well, this site is completely hand-written. I don't use any generators, yes, no `Jekyll`, no `Hexo`, and no `BootStrap`. I wrote it by hand. I used `HTML5` so I can use the `<audio>` tag. See that `<!DOCTYPE html>` ?
+Well, this site is completely hand-written. I don't use any generators, yes, no `Jekyll`, no `Hexo`, and no `BootStrap`. I wrote it by hand. I used `HTML5` so I can use the `<audio>` tag. See that `<!DOCTYPE html>` ?🧐
 
 * * *
 
 #### My server --- GitHub Pages
 
-To deploy the files into a remote site, I'll need a web server. But I don't want to spend any money, so I used `GitHub Pages` as the server. You can go to [pages.github.com](https://pages.github.com/) to learn more. You can use it to build your blog or organization site. Isn't that cool?
+To deploy the files into a remote site, I'll need a web server. But I don't want to spend any money, so I used `GitHub Pages` as the server. You can go to [pages.github.com](https://pages.github.com/) to learn more. You can use it to build your blog or organization site. Isn't that cool?🎬
 
 * * *
 
@@ -56,7 +56,7 @@ aside.Sidebar dov.Author div.Author_Photo:hover img#Author{
 }
 ```
 
-This makes my photo able to spin. I also used a third-party package for the icons...
+This makes my photo able to spin.🎨 I also used a third-party package for the icons...
 
 * * *
 
@@ -73,7 +73,7 @@ Wanna know where the icons are from? They are `Font Awesome` icons. Try them out
 
 That equals to: Amazing, right? 😎
 
-I used an online kit for those icons(but sadly I only have a free kit). The package I mentioned is called `l-lin/font-awesome-animation`. It allows me to create more kinds of font awesome animations. See `faa-tada`! I used it because the original animation doesn't work for me. Visit their [website](https://github.com/l-lin/font-awesome-animation/) to see more demos!
+I used an online kit for those icons(but sadly I only have a free kit). The package I mentioned is called `l-lin/font-awesome-animation`. It allows me to create more kinds of font awesome animations. See `faa-tada`! I used it because the original animation doesn't work for me.😐 Visit their [website](https://github.com/l-lin/font-awesome-animation/) to see more demos!
 
 * * *
 
@@ -93,7 +93,7 @@ Go to [my repo](https://github.com/guleixibian2009/hand-written-html-site/) and 
 
 #### Mouse Follower!
 
-Now see cautiously at your cursor. Can you see that red dot? Now try to move your mouse. It will always follow you wherever you go.
+Now see cautiously at your cursor. Can you see that red dot?🤓 Now try to move your mouse. It will always follow you wherever you go.
 
 I used `@bva/mouse-follow-js@0.0.8` to create it. Try this on your website!
 
@@ -116,13 +116,13 @@ $(document).ready(function(){
 
 ### All the functions --- JavaScript
 
-The use of `JavaScript` (actually `jQuery`) allows me to create beautiful animations and functions. The `Utility Buttons` the `Survey Banner` are built with `jQuery`. You can Press F12 or Ctrl + Shift + I to view the source code!
+The use of `JavaScript` (actually `jQuery`) allows me to create beautiful animations and functions. The `Utility Buttons` the `Survey Banner` are built with `jQuery`. You can Press F12 or Ctrl + Shift + I to view the source code!😋
 
 * * *
 
 #### JavaScript I wrote
 
-Well, actually I didn't want to learn `JavaScript` when I started this project... But once I decided to add a `Survey Banner`, I realized that I needed to hide it after several seconds. Then I started to write `JavaScript`.
+Well, actually I didn't want to learn `JavaScript` when I started this project... But once I decided to add a `Survey Banner`, I realized that I needed to hide it after several seconds. Then I started to write `JavaScript`.😏
 
 For example:
 
@@ -153,7 +153,7 @@ I'm not a professional programmer, so I used some `npm` packages. They are:
 
 `ClipboardJS` is for the `Copy Button`. Try them now, then paste in your editor. `jQuery.scrollTo` is for creating a linear animation when `Back To Top` is on. `jquery-mousewheel` is for listening to `mousewheel` events because `jQuery` cannot listen to `mousewheel` events!
 
-The package I like most is `highlightJS`. It's a package to "highlight" your code on a website. It supports more than 180 languages, and it provides many themes. I used the `Atom One Light Theme`. The basics are like this:
+The package I like most is `highlightJS`.🧡 It's a package to "highlight" your code on a website. It supports more than 180 languages, and it provides many themes. I used the `Atom One Light Theme`. The basics are like this:
 
 ```HTML
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/styles/atom-one-light.min.css"> <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/highlight.min.js"></script> <script>hljs.highlightAll();</script>
@@ -161,13 +161,13 @@ The package I like most is `highlightJS`. It's a package to "highlight" your cod
 
 Go to [their website](https://highlightjs.org/) and learn more!
 
-`HowlerJS` is for your background music(preloading). I used to use a `<audio> tag` but it would be very slow. So I used preloading. Well, I wanted to use `XHR` but `CORS` wouldn't let me go pass because I added an `Event Listener`.
+`HowlerJS` is for your background music(preloading). I used to use a `<audio> tag` but it would be very slow. So I used preloading. Well, I wanted to use `XHR` but `CORS` wouldn't let me go pass because I added an `Event Listener`.😥
 
 * * *
 
 #### JSdelivr --- CDNs
 
-So in order to make my website faster, I decided to use some CDNs. For `JavaScript`, I used `JSdelivr`. It may not be very fast in China, but it's better than hosting myself. For images, I used `imgtu.com` to upload. Welcome to visit [my album](https://imgtu.com/album/gIFx0)! For your background music, I used `BitBucket`. It's quite like `GitHub`, but it's much faster.
+So in order to make my website faster, I decided to use some CDNs. For `JavaScript`, I used `JSdelivr`. It may not be very fast in China, but it's better than hosting myself. For images, I used `imgtu.com` to upload. Welcome to visit [my album](https://imgtu.com/album/gIFx0)! For your background music, I used `BitBucket`. It's quite like `GitHub`, but it's much faster.✅
 
 * * *
 
@@ -191,7 +191,7 @@ It's just like filling in the blanks! Go to [shields.io and try it yourself](htt
 
 #### busuanzi --- count your visitors
 
-Visitor counting isn't that hard. Just put away those expensive APPs! `busuanzi` count can easily fulfill your dream.
+Visitor counting isn't that hard. Just put away those expensive APPs!🤚 `busuanzi` count can easily fulfill your dream.
 
 You can see the statics on the left. Get the magic? It's so easy that you only need one line of code!
 
@@ -205,7 +205,7 @@ There are two display moods. One is `Page View`, the other is `User View`. You c
 
 So that's all! Thank you for reading~
 
-**If you like this site, you can [clone this repo down](https://github.com/guleixibian2009/hand-written-html-site/). Maybe you can give me a star?**
+**If you like this site, you can [clone this repo down](https://github.com/guleixibian2009/hand-written-html-site/). Maybe you can give me a star?✨**
 
 Tip: This site is tested on `Firefox 98.0`. It should work well on `Chrome` too. If you have found some conpatibility problems, please open an issue.
 
