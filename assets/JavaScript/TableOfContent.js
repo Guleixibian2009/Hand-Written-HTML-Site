@@ -44,4 +44,16 @@ $(document).ready(function(){
     //If it's smaller than 20 and bigger than -20
 
     //Highlight it and remove the older one
+
+
+    //When clicked, get the id and it's YOffSet
+    $("nav li").click(function(){
+        var raw = $(this).text();
+        var destination = raw.replace(/[0-9]+/g,"").replace(".","").replace(" ","");
+        var heading = document.getElementById(destination);
+        var headingY = heading.offsetTop;
+        //Use jQuery.scrollTo to create a linear animation
+        $.scrollTo(headingY,800);
+    });
+    
 })
