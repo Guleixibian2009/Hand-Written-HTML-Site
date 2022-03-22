@@ -106,6 +106,7 @@ $(document).ready(function(){
 });
 
 //The title
+document.title = "⏳Loading...";
 $(document).ready(function(){
     document.title = "🎉Hand-Written-HTML-Site";
     window.onfocus = function () {
