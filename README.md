@@ -1,3 +1,5 @@
+**Notice: This project is nearly complete. It won't recieve major updates and releases any more, but it will continue to recive bug fixes and security updates.**
+
 # 👋Hi there~
 
 Welcome to [@Guleixibian2009](https://github.com/guleixibian2009/)'s **Hand-Written-HTML-Site**!
