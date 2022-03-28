@@ -8,6 +8,7 @@ $(document).ready(function(){
 
     StartButton.addEventListener('click',function(){
         if (typeof Dialog.showModal === "function"){
+            $(Dialog).css({"display":"block"});
             Dialog.showModal();
         } else {
             alert("Sorry, your browser doesn't support the <dialog> tag.");
@@ -19,10 +20,11 @@ $(document).ready(function(){
     });
 
     Dialog.addEventListener("close", function(){
+        $(Dialog).css({"display":"none"});
         var value = Dialog.returnValue;
         switch (value){
             case "option1":{
-                Output.innerHTML = "Thank you! I'll always try to make it better. You can download the source code if you wish!";
+                Output.innerHTML = "Thanks! I'll always try to make it better. You can download the source code if you wish!";
                 break;
             }
             case "option2":{

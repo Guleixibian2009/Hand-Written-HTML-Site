@@ -51,7 +51,7 @@ aside.Sidebar div.Author div.Author_Photo img#Author{
     /*Code from my generated site*/ 
     transition: transform 2s ease-in-out; 
 } 
-aside.Sidebar dov.Author div.Author_Photo:hover img#Author{ 
+aside.Sidebar div.Author div.Author_Photo:hover img#Author{ 
     transform: rotateZ(360deg); 
 }
 ```

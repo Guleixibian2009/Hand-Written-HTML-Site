@@ -125,34 +125,27 @@ div.Util_Buttons > div#Volume_Wrapper:hover{
 }
 
 /*hr --- margin*/
-@keyframes HrMargin{
-    0%{
-        margin: 10px 100px;
-    }
-    50%{
-        margin: 10px 55px;
-    }
-    100%{
-        margin: 10px 10px;
-    }    
+div.Main_Body_Article hr{
+    margin-left: 110px;
+    margin-right: 110px;
+    transition: all 0.3s;
 }
 
 div.Main_Body_Article hr:hover{
-    animation: HrMargin 0.3s linear both;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: all 0.3s;
 }
 
 /*headings --- padding-left*/
-@keyframes HeadingPadding{
-    0%{
-        padding-left: 0px;
-    }
-    100%{
-        padding-left: 40px;
-    }
+main.Main_Body h2, main.Main_Body h3, main.Main_Body h4{
+    padding-left: 0px;
+    transition: 0.5s;
 }
 
 main.Main_Body h2:hover, main.Main_Body h3:hover, main.Main_Body h4:hover{
-    animation: HeadingPadding 0.5s ease-in-out both;
+    padding-left: 40px;
+    transition: 0.5s;
 }
 
 /*TOC_Item --- border*/

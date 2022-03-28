@@ -239,10 +239,11 @@ div.Main_Body_Article i.fa.fa-heart{
 div.Main_Body_Update_Data{
     margin: 0px;
 
+    margin: 10px 10px 10px 30px;
     border-style: none none none solid;
     border-radius: 0px;
     border-left-color: cornflowerblue;
-    border-left-width: 5px;
+    border-left-width: 3px;
     background-color: rgb(221, 255, 255);
 
     padding: 5px
@@ -261,6 +262,15 @@ div.Main_Body_Update_Data img{
 }
 
 /*The like survey*/
+div.Like_Survey{
+    background-color: rgb(221, 255, 255);
+    margin: 10px 10px 10px 30px;
+    border-style: none none none solid;
+    border-left-color: cornflowerblue;
+    border-left-width: 3px;
+    padding: 8px;
+}
+
 div.Like_Survey p{
     text-align: center;
 
@@ -281,8 +291,7 @@ div.Like_Survey p button{
 }
 
 div.Like_Survey dialog{
-    position: fixed;
-    bottom: 0px;
+    display: none;
 
     z-index: 10;
 
