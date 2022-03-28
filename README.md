@@ -1,4 +1,4 @@
-**Notice: This project is nearly complete. It won't recieve major updates and releases any more, but it will continue to recive bug fixes and security updates.**
+**Notice: This project is now complete. It won't recieve major updates and releases any more, but it will continue to recive bug fixes and security updates.**
 
 # 👋Hi there~
 
