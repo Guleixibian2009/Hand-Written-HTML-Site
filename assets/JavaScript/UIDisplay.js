@@ -109,14 +109,32 @@ $(document).ready(function(){
 document.title = "⏳Loading...";
 $(document).ready(function(){
     document.title = "🎉Hand-Written-HTML-Site";
-    window.onfocus = function () {
+    window.onfocus = function(){
         window.setTimeout(function(){
             document.title = '🎉Hand-Written-HTML-Site';
         }, 200);
     };
-    window.onblur = function () {
+    window.onblur = function(){
         window.setTimeout(function(){
             document.title = '⏳Loading...';
         }, 200);
     };
+});
+
+//Magictime effects
+$(document).ready(function(){
+    const Header = $("header.Header");
+    const Author = $("aside.Sidebar");
+    const Body = $("main.Main_Body");
+    const TOC = $("nav.TOC");
+
+    function ChangeAnimateClass(){
+        $(Header).toggleClass('magictime slideUpReturn');
+        $(Author).toggleClass('magictime perspectiveLeftReturn');
+        $(Body).toggleClass('magictime slideDownReturn');
+        $(TOC).toggleClass('magictime perspectiveRightReturn');
+    }
+    
+    ChangeAnimateClass();
+    window.setTimeout(ChangeAnimateClass, 1000);
 });
